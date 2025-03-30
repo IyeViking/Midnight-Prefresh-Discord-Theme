@@ -4,7 +4,7 @@ A pre-refresh familiar, QOL, rounded discord theme.
 A tweaked and edited version of [Midnight](https://refact0r.github.io/midnight-discord/) by refact0r
 
 vencord/betterdiscord (or client that supports theme files)
-download the theme file, Prefresh-Midnight.theme.css. there should be a download button on the top right of the page.
+download the theme file, [Prefresh-Midnight.theme.css](https://github.com/IyeViking/Midnight-Prefresh-Discord-Theme/releases), it's in a .zip file since Github won't let me upload a .css file to releases.
 drag the file into your theme folder. (there should be a button to open the theme folder in theme settings)
 
 credits
