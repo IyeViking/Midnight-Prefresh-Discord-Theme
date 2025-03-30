@@ -1303,3 +1303,13 @@ background: #3c4a7f !important;
 	background-color: #22242a !important;
 	    transition: none !important;
 }
+
+.container_faa96b.mainCard_f369db {
+	background-color: #2b2d31 !important;
+}
+
+.container_faa96b:hover.mainCard_f369db {
+	background-color: #2b2d31 !important;
+    outline: 4px solid #52555e; /* Red outline on hover */
+
+}
