@@ -1,5 +1,5 @@
 # Midnight Prefresh
-A pre-refresh familiar, QOL, rounded discord theme. Tweaked by IyeViking Tweaked by IyeViking
+A pre-refresh familiar, QOL, rounded discord theme.
 
 A tweaked and edited version of [Midnight](https://refact0r.github.io/midnight-discord/) by refact0r
 
