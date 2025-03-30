@@ -1291,3 +1291,15 @@ body {
 ::selection {
 background: #3c4a7f !important;
 }
+
+
+/* Spoiler Colour */
+.spoilerContent__54ab5.spoilerMarkdownContent__54ab5.hidden__54ab5 {
+	background-color: #1e1f22 !important;
+	    transition: none !important;
+}
+
+.spoilerContent__54ab5:hover.spoilerMarkdownContent__54ab5.hidden__54ab5 {
+	background-color: #22242a !important;
+	    transition: none !important;
+}
