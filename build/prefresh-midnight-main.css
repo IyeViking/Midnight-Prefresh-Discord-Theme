@@ -1283,3 +1283,11 @@ body {
 .separator_b3f026 {
 	background-color: #75a5e5 !important;
 }
+
+.highlight {
+  background: #00ff00;
+}
+
+::selection {
+background: #3c4a7f !important;
+}
