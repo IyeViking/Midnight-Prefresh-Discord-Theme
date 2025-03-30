@@ -14,4 +14,6 @@ window controls inspired by https://github.com/Dyzean/Tokyo-Night
 
 Original Midnight by https://refact0r.github.io/midnight-discord/
 
+Settings menu by https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/
+
 thanks to everyone who made Midnight possible!
