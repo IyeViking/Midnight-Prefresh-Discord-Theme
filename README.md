@@ -7,7 +7,8 @@ Vencord/Detterdiscord (or client that supports theme files)
 Download the theme file, [Prefresh-Midnight.theme.css](https://github.com/IyeViking/Midnight-Prefresh-Discord-Theme/releases), it's in a .zip file since Github won't let me upload a .css file to releases.
 Drag the file into your theme folder. (there should be a button to open the theme folder in theme settings)
 
-credits
+Credits:
+
 Original design inspired by https://github.com/schnensch0/zelk
 
 Window controls inspired by https://github.com/Dyzean/Tokyo-Night
