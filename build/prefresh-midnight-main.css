@@ -133,6 +133,87 @@ body {
     --purple-3: oklch(64% 0.11 310);
     --purple-4: oklch(58% 0.11 310);
     --purple-5: oklch(52% 0.11 310);
+	--text-white: #FFFFFFC9;
+
+/* Material Discord Variables*/
+  --app-bg: var(--main-alt);
+  --app-title-bar-height: 22px;
+  --app-button-min: hsl(39,100%,63%);
+  --app-button-max: hsl(143,100%,40%);
+  --app-button-close: hsl(1,100%,68%);
+  --accent-hue: 224;
+  --accent-saturation: 71%;
+  --accent-lightness: 61%;
+  --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
+  --accent-text-color: hsl(0,0%,100%);
+  --alert-hue: 0;
+  --alert-saturation: 85%;
+  --alert-lightness: 61%;
+  --alert-hsl: var(--alert-hue), calc(var(--alert-saturation) * var(--saturation-factor)), var(--alert-lightness);
+  --alert-text-color: hsl(0,0%,100%);
+  --warning-hue: 44;
+  --warning-saturation: 71%;
+  --warning-lightness: 61%;
+  --warning-hsl: var(--warning-hue), calc(var(--warning-saturation) * var(--saturation-factor)), var(--warning-lightness);
+  --warning-text-color: hsl(0,0%,100%);
+  --reply-hue: var(--warning-hue);
+  --reply-saturation: var(--warning-saturation);
+  --reply-lightness: var(--warning-lightness);
+  --reply-hsl: var(--reply-hue), calc(var(--reply-saturation) * var(--saturation-factor)), var(--reply-lightness);
+  --reply-opacity: 0.3;
+  --reply-text-color: var(--warning-text-color);
+  --success-color: var(--button-positive-background);
+  --success-text-color: var(--white-500);
+  --success-color: hsl(153,46%,49%);
+  --sidebar-panel-radius-big: var(--popout-radius-big);
+  --sidebar-panel-radius-small: 4px;
+  --message-radius: 18px;
+  --message-padding-top: 8px;
+  --message-padding-side: 12px;
+  --main-textarea-color: var(--input-color);
+  --main-textarea-border: var(--input-border-color);
+  --main-textarea-radius: 24px;
+  --media-radius: calc(var(--message-radius) / 1.75);
+  --card-radius: 8px;
+  --card-radius-big: 18px;
+  --button-height: 36px;
+  --button-radius: calc(var(--button-height) / 2);
+  --button-padding: 0 24px;
+  --button-padding-has-icon-left: 0 24px 0 16px;
+  --button-padding-has-icon-right: 0 16px 0 24px;
+  --button-font-size: 14px;
+  --button-link-accent-color: var(--accent-hsl--material-you);
+  --button-link-accent-text-color: hsl(var(--accent-hsl--material-you));
+  --button-action-color: hsl(0,0%,100%);
+  --button-action-hover: 0.06;
+  --button-action-active: 0.12;
+  --input-height: var(--button-height);
+  --input-radius: calc(var(--input-height) / 2);
+  --input-padding: 0 12px;
+  --typing-color: hsl(from var(--chat-color) h s l / 0.9);
+  --emoji-category-header: hsl(from var(--popout-color) h s l / 0.95);
+  --popout-radius: var(--card-radius);
+  --popout-radius-big: var(--card-radius-big);
+  --avatar-radius: 24px;
+  --channel-radius: 21px;
+  --spotify-color: hsl(141,73%,42%);
+  --stream-color: hsl(262,47%,40%);
+  --xbox-color: hsl(120,77%,27%);
+  --tooltip-color: hsl(0,0%,38%,0.9);
+  --tooltip-border-color: hsl(0,0%,51%);
+  --tooltip-text-color: hsl(0,0%,87%);
+  --tooltip-font-size: 12px;
+  --tooltip-padding: 8px;
+  --tooltip-radius: 8px;
+  --tooltip-shadow: 0px 5px 15px hsl(0,0%,0%,0.2);
+  --shadow-1dp: 0 2px 2px 0 hsl(0,0%,0%,0.14), 0 3px 1px -2px hsl(0,0%,0%,0.2), 0 1px 5px 0 hsl(0,0%,0%,0.12);
+  --shadow-2dp: 0 4px 5px 0 hsl(0,0%,0%,0.14), 0 1px 10px 0 hsl(0,0%,0%,0.12), 0 2px 4px -1px hsl(0,0%,0%,0.2);
+  --shadow-3dp: 0 8px 10px 1px hsl(0,0%,0%,0.14), 0 3px 14px 2px hsl(0,0%,0%,0.12), 0 5px 5px -3px hsl(0,0%,0%,0.2);
+  --default-animation: cubic-bezier(0.4,0,0.2,1);
+  --default-time: 250ms;
+  --scrollbar-width: 10px;
+  --scrollbar-thin-width: 6px;
+  --code-font: Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace;
 
 }
 
@@ -411,6 +492,12 @@ c26681
 .accountProfileCard__1fed1 .banner__68edb {
   border-radius: var(--card-radius-big);
 }
+
+.inputDefault__0f084.input__0f084 {
+  background-color: #1e1f22; /* Dark background */
+  color: var(--text-white); /* White text */
+}
+
 .accountProfileCard__1fed1 .userInfo__1fed1 {
   position: relative;
   height: 88px;
@@ -663,208 +750,6 @@ c26681
   background-color: var(--card-button-color-hover);
 }
 
-/*
- *
- *  USER SETTINGS PROFILES
- *
- */
-.tabBar_d6f9e9 .tabBarItem_d6f9e9 {
-  border-bottom: none;
-}
-.tabBar_d6f9e9 .tabBarItem_d6f9e9.selected-g-kMVV {
-  position: relative;
-  background-color: transparent !important;
-  border: none;
-}
-.tabBar_d6f9e9 .tabBarItem_d6f9e9.selected-g-kMVV:after {
-  position: absolute;
-  content: " ";
-  width: 90%;
-  height: 3px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
-  background: var(--tab-border-color);
-  border-radius: 3px 3px 0 0;
-  transition: var(--default-time) ease all;
-}
-
-.baseLayout__44061 {
-  gap: 16px;
-}
-
-.notice-1Qe0b_ {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 8px;
-  border-radius: var(--card-radius-big);
-}
-
-.upsellOverlayContainer__0f7dc,
-.upsellTextContainer__0f7dc {
-  border-radius: var(--card-radius-big);
-}
-
-.upsellOverlayContainer__0f7dc {
-  overflow: hidden;
-}
-
-.container-5BK5-N, .container__8279f {
-  border-radius: var(--card-radius-big);
-}
-
-.customizationSection_ace4f5 {
-  --input-color: var(--input-color-alt);
-  margin-bottom: 16px;
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-.customizationSection_ace4f5:last-child:not(.withDivider_ace4f5) {
-  padding-bottom: 16px;
-}
-.customizationSection_ace4f5.hideDivider_ace4f5 {
-  padding-bottom: 16px;
-}
-.customizationSection_ace4f5.preview__44061 {
-  max-width: unset;
-}
-.customizationSection_ace4f5.profileThemeSectionPremiumBorder-pH_ioT {
-  margin: 0 0 16px;
-  background: linear-gradient(var(--main-color), var(--main-color)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
-  border-width: 2px;
-}
-.customizationSection_ace4f5.profileThemeSectionPremiumBorder-pH_ioT + .divider-2bhE_v {
-  display: none;
-}
-.customizationSection_ace4f5.profileThemeSectionPremiumBorder-pH_ioT .inlineUpsell-3zPTgw {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-.customizationSection_ace4f5.preview-Z55SA3 .title_ace4f5 {
-  display: none;
-}
-.customizationSection_ace4f5 .title_ace4f5 {
-  margin: -16px -16px 0;
-  margin-bottom: 0;
-  padding: 16px;
-  background-color: transparent;
-  font-size: 1.25em;
-  line-height: normal;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-  opacity: 1;
-}
-.customizationSection_ace4f5 .title_ace4f5 .titleText-1IEWzs {
-  line-height: normal;
-  font-size: inherit;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-}
-.customizationSection_ace4f5 .removeButton_ffefd9 {
-  margin-left: 16px;
-}
-
-.customizationSectionBorder_ace4f5 {
-  margin: -16px;
-  background: linear-gradient(var(--card-color-filled), var(--card-color-filled)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
-  border-radius: var(--card-radius-big);
-}
-.customizationSectionBorder_ace4f5 .background__65c15 {
-  padding: 16px;
-}
-.customizationSectionBorder_ace4f5 .nitroWheel_c5f0dc {
-  height: 22px;
-}
-
-.bioTextArea__6a919 {
-  --input-padding: 0 12px;
-  height: 136px !important;
-  max-height: 136px !important;
-  padding: var(--input-padding) !important;
-  background-color: var(--input-color) !important;
-  border-radius: calc(136px / 2) !important;
-  border: none;
-  border-radius: 19px !important;
-}
-.bioTextArea__6a919 .textAreaWithoutAttachmentButton__74017 {
-  padding: 12px 0;
-}
-
-.profileBannerPreview-3mLIdO {
-  background-color: var(--popout-color);
-  border-radius: var(--popout-radius-big);
-  box-shadow: var(--shadow-3dp);
-}
-.profileBannerPreview-3mLIdO .avatarUploaderInner_ab876d {
-  background-color: transparent;
-  border: none;
-  box-shadow: var(--shadow-3dp);
-}
-.profileBannerPreview-3mLIdO .avatarUploaderInner_ab876d:focus-within .avatarUploaderHint-2ZdBlc, .profileBannerPreview-3mLIdO .avatarUploaderInner_ab876d:hover .avatarUploaderHint-2ZdBlc {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
-.decorationGridItem_dfa67d, .effectGridItem_b4019a {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 0;
-  border-radius: var(--card-radius-big);
-  transition: var(--default-time) var(--default-animation) background-color;
-  transition: var(--default-time) var(--default-animation) box-shadow;
-}
-.decorationGridItem_dfa67d:hover, .effectGridItem_b4019a:hover {
-  background-color: var(--card-color-hover);
-}
-.decorationGridItem_dfa67d.selected_b4019a, .effectGridItem_b4019a.selected_b4019a {
-  box-shadow: 0 0 0 2px hsl(var(--accent-hsl--material-you));
-}
-
-.decorationPreview__51743 {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 0;
-  border-radius: var(--card-radius-big);
-}
-
-.smallDecorationPreviewsContainer__51743 {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 8px;
-  border-radius: var(--card-radius-big);
-}
-
-.effectDescriptionBorderWithGradient__92e52 {
-  border-radius: var(--card-radius-big);
-}
-.effectDescriptionBorderWithGradient__92e52 .effectDescriptionContainer__92e52 {
-  background-color: var(--card-color-filled);
-  border-radius: calc(var(--card-radius-big) - 2px);
-}
-
-.effectDescriptionNoGradient__92e52 {
-  background-color: transparent;
-  border: none;
-}
-.effectDescriptionNoGradient__92e52 .effectDescriptionContainer__92e52 {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 8px;
-  border-radius: var(--card-radius-big);
-}
-
-.shopPreviewContainer__51743 {
-  background: linear-gradient(var(--card-color-filled), var(--card-color-filled)) padding-box, var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box;
-  border-radius: var(--card-radius-big);
-}
-.shopPreviewContainer__51743 .shopPreviewBanner__51743 {
-  background-color: var(--card-color-active);
-  border-radius: calc(var(--card-radius-big) - 2px);
-}
 
 /* USER SETTINGS PROFILES -> TRY OUT NITRO SECTION */
 .tryItOutSection__9d295 {
@@ -890,6 +775,9 @@ c26681
   background: var(--card-color-filled);
   border-radius: var(--card-radius-big);
 }
+
+
+
 
 /*
  *
@@ -1240,11 +1128,12 @@ c26681
  */
 .layer__960e4,
 .standardSidebarView__23e6b {
-  background-color: var(--main-alt);
+  background-color: #2b2d31 !important;
 }
 
+
 .contentRegion__23e6b {
-  background-color: var(--main-color);
+  background-color: #313338 !important;
   border-radius: var(--card-radius-big) var(--card-radius-big) 0 var(--card-radius-big);
 }
 .contentRegion__23e6b .contentRegionScroller__23e6b {
