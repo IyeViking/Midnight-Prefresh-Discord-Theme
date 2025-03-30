@@ -7,9 +7,13 @@ Installation:
 
 -Vencord / BetterDiscord (or client that supports theme files)
 
--Download the theme file, [Prefresh-Midnight.theme.css](https://github.com/IyeViking/Midnight-Prefresh-Discord-Theme/blob/main/midnight-prefresh.theme.css), (there's a ... button at the top right with a download option)
+-Download the theme file, [Prefresh-Midnight.theme.css](https://github.com/IyeViking/Midnight-Prefresh-Discord-Theme/blob/main/midnight-prefresh.theme.css), (there's a ... button at the top right with a download option), using this one ensures that you'll receive every update automatically.
 
 -Drag the file into your theme folder. (The "Themes" menu should have a "open folder" button)
+
+For anything you feel I've missed or if there's any plugins that don't work, feel free to add me on discord!
+
+IyeViking
 
 Credits:
 
