@@ -72,7 +72,7 @@ body {
     /* background and dark colors */
     --bg-1: #43434a; /* dark buttons when clicked */
     --bg-2: #1e1f22; /* dark buttons */
-    --bg-3: #28282d; /* spacing, secondary elements */
+    --bg-3: #28282d; /* spacing, secondary elements*/ 
     --bg-4: #313338	; /* main background color */
     --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
     --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
@@ -254,8 +254,8 @@ body {
     border-left-color: #c43035 !important; /* Orange */
 }
 
-.inner__74017 {
-	background-color: #2d2d33 !important;
+.scrollableContainer__74017.themedBackground__74017 {
+	background-color: #2b2d31	 !important;
 }
 
 .scroller_c1e9c4 {
@@ -1231,3 +1231,55 @@ body {
     border-radius: 35px !important;
 }
 
+.banner__183e8.clickable__183e8 {
+	background-color: #2d2d33 !important;
+}
+
+
+.vc-spotify-button {
+  color: #aeaeb4; /* Change to your desired color */
+}
+
+.vc-spotify-button:hover {
+  color: #00ff00; /* Hover color */
+}
+
+/* Color when shuffle is on */
+.vc-spotify-button.vc-spotify-shuffle-on {
+  color: #1dd05d; /* Set color when shuffle is on, e.g., red */
+}
+
+/* Color when repeat is on */
+.vc-spotify-repeat-track {
+  color: #1dd25e; /* Set color when shuffle is on, e.g., red */
+}
+
+/* Color when repeat is on */
+.vc-spotify-repeat-context {
+  color: #1dd25e; /* Set color when shuffle is on, e.g., red */
+}
+
+
+/* Optionally, you can also change the background color of the bar container */
+.bar_a562c8 {
+  background-color: #4d4d4d !important; /* Set the background color of the progress bar container (light grey in this case) */
+}
+
+/* Normal state of the progress bar fill */
+.bar_a562c8 .barFill_a562c8 {
+  background-color: #1db954; /* Red color for the progress fill */
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover state of the progress bar fill */
+.bar_a562c8:hover .barFill_a562c8 {
+  background-color: #e74c3c; /* Green color when hovered */
+}
+
+.panels_c48ade {
+	background-color: #232428 !important;
+}
+
+.separator_b3f026 {
+	background-color: #75a5e5 !important;
+}
