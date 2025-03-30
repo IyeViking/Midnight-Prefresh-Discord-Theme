@@ -9,6 +9,7 @@ drag the file into your theme folder. (there should be a button to open the them
 
 credits
 original design inspired by https://github.com/schnensch0/zelk
+
 window controls inspired by https://github.com/Dyzean/Tokyo-Night
 
 Original Midnight by https://refact0r.github.io/midnight-discord/
