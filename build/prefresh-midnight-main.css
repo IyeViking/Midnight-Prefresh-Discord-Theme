@@ -1,5 +1,8 @@
 /* import theme modules */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
+
+
 
  /*Custom code edit here */
 body {
@@ -59,6 +62,15 @@ body {
 
 /* color options */
 :root {
+	
+	    /* Set to 1 if you want them to float  *\
+    |*      Recommended while using        *|
+    \*      Midnight/Rounded Themes        */
+    --craat-popout: 0; /* Default = 0 */
+    /* Change the border radius *\
+    \*      for the alerts      */
+    --craat-border-radius: 16px; /* default: 16px */
+	
     --colors: on; /* turn off to use discord default colors */
 
     /* text colors */
@@ -134,86 +146,6 @@ body {
     --purple-4: oklch(58% 0.11 310);
     --purple-5: oklch(52% 0.11 310);
 	--text-white: #FFFFFFC9;
-
-/* Material Discord Variables*/
-  --app-bg: var(--main-alt);
-  --app-title-bar-height: 22px;
-  --app-button-min: hsl(39,100%,63%);
-  --app-button-max: hsl(143,100%,40%);
-  --app-button-close: hsl(1,100%,68%);
-  --accent-hue: 224;
-  --accent-saturation: 71%;
-  --accent-lightness: 61%;
-  --accent-hsl: var(--accent-hue),calc(var(--accent-saturation) * var(--saturation-factor)),var(--accent-lightness);
-  --accent-text-color: hsl(0,0%,100%);
-  --alert-hue: 0;
-  --alert-saturation: 85%;
-  --alert-lightness: 61%;
-  --alert-hsl: var(--alert-hue), calc(var(--alert-saturation) * var(--saturation-factor)), var(--alert-lightness);
-  --alert-text-color: hsl(0,0%,100%);
-  --warning-hue: 44;
-  --warning-saturation: 71%;
-  --warning-lightness: 61%;
-  --warning-hsl: var(--warning-hue), calc(var(--warning-saturation) * var(--saturation-factor)), var(--warning-lightness);
-  --warning-text-color: hsl(0,0%,100%);
-  --reply-hue: var(--warning-hue);
-  --reply-saturation: var(--warning-saturation);
-  --reply-lightness: var(--warning-lightness);
-  --reply-hsl: var(--reply-hue), calc(var(--reply-saturation) * var(--saturation-factor)), var(--reply-lightness);
-  --reply-opacity: 0.3;
-  --reply-text-color: var(--warning-text-color);
-  --success-color: var(--button-positive-background);
-  --success-text-color: var(--white-500);
-  --success-color: hsl(153,46%,49%);
-  --sidebar-panel-radius-big: var(--popout-radius-big);
-  --sidebar-panel-radius-small: 4px;
-  --message-radius: 18px;
-  --message-padding-top: 8px;
-  --message-padding-side: 12px;
-  --main-textarea-color: var(--input-color);
-  --main-textarea-border: var(--input-border-color);
-  --main-textarea-radius: 24px;
-  --media-radius: calc(var(--message-radius) / 1.75);
-  --card-radius: 8px;
-  --card-radius-big: 18px;
-  --button-height: 36px;
-  --button-radius: calc(var(--button-height) / 2);
-  --button-padding: 0 24px;
-  --button-padding-has-icon-left: 0 24px 0 16px;
-  --button-padding-has-icon-right: 0 16px 0 24px;
-  --button-font-size: 14px;
-  --button-link-accent-color: var(--accent-hsl--material-you);
-  --button-link-accent-text-color: hsl(var(--accent-hsl--material-you));
-  --button-action-color: hsl(0,0%,100%);
-  --button-action-hover: 0.06;
-  --button-action-active: 0.12;
-  --input-height: var(--button-height);
-  --input-radius: calc(var(--input-height) / 2);
-  --input-padding: 0 12px;
-  --typing-color: hsl(from var(--chat-color) h s l / 0.9);
-  --emoji-category-header: hsl(from var(--popout-color) h s l / 0.95);
-  --popout-radius: var(--card-radius);
-  --popout-radius-big: var(--card-radius-big);
-  --avatar-radius: 24px;
-  --channel-radius: 21px;
-  --spotify-color: hsl(141,73%,42%);
-  --stream-color: hsl(262,47%,40%);
-  --xbox-color: hsl(120,77%,27%);
-  --tooltip-color: hsl(0,0%,38%,0.9);
-  --tooltip-border-color: hsl(0,0%,51%);
-  --tooltip-text-color: hsl(0,0%,87%);
-  --tooltip-font-size: 12px;
-  --tooltip-padding: 8px;
-  --tooltip-radius: 8px;
-  --tooltip-shadow: 0px 5px 15px hsl(0,0%,0%,0.2);
-  --shadow-1dp: 0 2px 2px 0 hsl(0,0%,0%,0.14), 0 3px 1px -2px hsl(0,0%,0%,0.2), 0 1px 5px 0 hsl(0,0%,0%,0.12);
-  --shadow-2dp: 0 4px 5px 0 hsl(0,0%,0%,0.14), 0 1px 10px 0 hsl(0,0%,0%,0.12), 0 2px 4px -1px hsl(0,0%,0%,0.2);
-  --shadow-3dp: 0 8px 10px 1px hsl(0,0%,0%,0.14), 0 3px 14px 2px hsl(0,0%,0%,0.12), 0 5px 5px -3px hsl(0,0%,0%,0.2);
-  --default-animation: cubic-bezier(0.4,0,0.2,1);
-  --default-time: 250ms;
-  --scrollbar-width: 10px;
-  --scrollbar-thin-width: 6px;
-  --code-font: Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace;
 
 }
 
@@ -422,7 +354,7 @@ body {
 /* Default button color */
 .button__201d5.lookFilled__201d5.colorRed__201d5 {
     background-color: #ba2f31 !important; /* Change to your desired color */
-    color: #FFFFFFC9 !important; /* Text color */
+    color: v !important; /* Text color */
 }
 
 /* Hover effect */
@@ -450,7 +382,7 @@ body {
 
 .welcomeCTAButtonOuter_f5d1e2 {
     background-color: #4e5058 !important; /* Change to your desired color */
-    color: white; /* Text color */
+    color: FFFFFFC9; /* Text color */
     border-radius: 8px; /* Adjust if needed */
     transition: background-color 0.2s ease-in-out;
 }
@@ -474,756 +406,6 @@ body {
 .disconnect_f1ceac:hover {
     background-color: #a12829 !important; /* Darker red for hover */
 }
-
-/*
- *
- *  USER SETTINGS MY ACCOUNT
- *
- */
-.accountProfileCard__1fed1 {
-  background-color: var(--card-color-filled);
-  border-radius: var(--card-radius-big);
-}
-.accountProfileCard__1fed1 .banner__68edb {
-  border-radius: var(--card-radius-big);
-}
-
-.inputDefault__0f084.input__0f084 {
-  background-color: #1e1f22; /* Dark background */
-  color: var(--text-white); /* White text */
-}
-
-.accountProfileCard__1fed1 .userInfo__1fed1 {
-  position: relative;
-  height: 88px;
-  padding: 16px 16px 16px 130px;
-}
-.accountProfileCard__1fed1 .userInfo__1fed1 .wrapper__44b0c {
-  width: 94px !important;
-  height: 94px !important;
-  top: unset;
-  bottom: 21px;
-  background-color: var(--card-color-filled);
-  border: 8px solid var(--card-color-filled);
-}
-.accountProfileCard__1fed1 .mask__68edb circle {
-  display: none;
-}
-.accountProfileCard__1fed1 .background__1fed1 {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0 0 var(--card-radius-big) var(--card-radius-big);
-}
-.accountProfileCard__1fed1 .background__1fed1:before {
-  position: absolute;
-  content: " ";
-  width: calc(100% - 32px);
-  height: 1px;
-  top: 0;
-  left: 16px;
-  background-color: var(--card-border-color);
-}
-.accountProfileCard__1fed1 .background__1fed1 .fieldList__1fed1 {
-  margin-top: 0;
-  padding: 16px;
-}
-.accountProfileCard__1fed1 .background__1fed1 .fieldList__1fed1 .constrainedRow__1fed1 .button__201d5 {
-  margin-left: 8px;
-}
-.accountProfileCard__1fed1 .background__1fed1 .fieldList__1fed1 .button__201d5:not(:last-child) {
-  margin-right: 16px;
-}
-.accountProfileCard__1fed1 .badgeList__1fed1 {
-  height: 32px;
-  padding: 0 8px;
-  background-color: var(--card-color-hover) !important;
-  border-radius: 16px;
-}
-
-.banner__68edb:before {
-  display: none;
-}
-
-.settingsBanner_d5fdb1 {
-  position: relative;
-  border-radius: calc(var(--card-radius-big) / 1.5);
-}
-
-.fieldList__1fed1 {
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-.credentialList__6c75d {
-  margin-bottom: 16px;
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 8px;
-  border-radius: var(--card-radius-big);
-}
-
-.credentialItem__6c75d {
-  border-radius: calc(var(--card-radius-big) / 1.65);
-  border-top: none;
-  transition: var(--default-time) var(--default-animation) background-color;
-}
-.credentialItem__6c75d:not(:last-child) {
-  margin-bottom: 0;
-}
-.credentialItem__6c75d:hover {
-  background-color: var(--card-color-hover);
-}
-
-/*
- *
- *  USER SETTINGS NITRO
- *
- */
-.container-3D-8Ly {
-  border-radius: var(--card-radius-big);
-}
-
-.ctaWrapper-4Js5Q6 {
-  border-radius: var(--card-radius-big);
-}
-.ctaWrapper-4Js5Q6 .ctaButtonInner-2VRelf {
-  color: var(--button-text-color);
-}
-
-.innerWrapper_c511e4 {
-  background-color: var(--popout-color);
-  border-radius: 34px;
-  box-shadow: var(--shadow-3dp);
-}
-
-.tierCard_a45ed3 {
-  border-radius: var(--card-radius-big);
-}
-
-.giftCard_a45ed3 {
-  background-color: var(--card-color-filled);
-  border-radius: var(--card-radius-big);
-}
-
-/* USER SETTINGS -> NITRO -> SERVER BOOST */
-.gradient__8e08c {
-  border-radius: var(--card-radius-big);
-}
-
-.wave__8e08c {
-  fill: var(--card-color-filled);
-}
-
-.wrapper__686ce {
-  margin-top: 30px;
-}
-
-.guildContainer__5dba5,
-.wrapper__37ae5 {
-  background-color: var(--card-color-filled);
-  border-radius: var(--card-radius-big);
-}
-
-.wrapper__4d7bb {
-  border-radius: var(--card-radius-big);
-}
-.wrapper__4d7bb .card__4d7bb {
-  border-radius: var(--card-radius-big);
-}
-
-/*
- *
- *  USER SETTINGS PARTY MODE
- *
- */
-.achievementContainer_f8824b {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-
-.container__8e75f {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 16px;
-  border-radius: var(--card-radius-big);
-}
-.container__8e75f:hover {
-  background-color: var(--card-color-outlined);
-}
-.container__8e75f .container_e6b065 {
-  background-color: var(--menu-item-hover);
-}
-
-.container_e48555 {
-  padding: var(--tooltip-padding);
-  background-color: var(--tooltip-color);
-  box-shadow: var(--tooltip-shadow);
-  border-radius: 28px;
-}
-.container_e48555 .container_e6b065 {
-  background-color: rgba(0, 0, 0, 0.35);
-}
-.container_e48555 .text-md-semibold-3xVVGu,
-.container_e48555 .text-xs-medium-2LRpEj {
-  color: var(--tooltip-text-color) !important;
-}
-
-.comboNameplate__257af {
-  background-color: var(--popout-color);
-  box-shadow: var(--shadow-3dp);
-  border-radius: 18px;
-}
-.comboNameplate__257af .comboMultiplier__257af {
-  color: hsl(var(--accent-hsl--material-you)) !important;
-}
-
-.progressBar-1T6LYX {
-  background-color: hsl(var(--accent-hsl--material-you)) !important;
-}
-
-/*
- *
- *  USER SETTINGS PRIVACY AND SAFETY
- *
- */
-.profile_d878e7 {
-  margin-left: 0;
-}
-
-.avatarBackground_eb2508 {
-  background-color: var(--card-color-filled);
-}
-
-.status_d878e7 [style*="color: var(--status-positive)"] {
-  color: var(--success-color) !important;
-}
-
-.line_d878e7 {
-  background-color: var(--card-color-active);
-}
-
-.marker_d878e7 {
-  margin: 0 !important;
-  background-color: var(--card-color-active);
-}
-.marker_d878e7 path {
-  fill: var(--success-color);
-  transform: translate(-1px, -1px) scale(1.091);
-}
-.marker_d878e7 .empty_d878e7 {
-  background-color: var(--card-color-filled);
-}
-
-/* USER SETTINGS PRIVACY AND SAFETY -> ENCRYPTION */
-.item_aade6b {
-  background-color: var(--card-color-filled);
-  border-radius: var(--card-radius-big);
-}
-.item_aade6b .section__89d80 {
-  background-color: transparent;
-}
-.item_aade6b .row__89d80 {
-  margin: 0 8px 8px;
-  background-color: var(--card-color-hover);
-  border-radius: calc(var(--card-radius-big) / 1.5);
-}
-.item_aade6b .icon__89d80 {
-  transition: var(--default-time) var(--default-animation) background-color;
-}
-.item_aade6b .icon__89d80:hover {
-  background-color: var(--card-button-color);
-}
-.item_aade6b .icon__89d80.sectionIconContainer__89d80 {
-  background-color: var(--card-button-color);
-}
-.item_aade6b .icon__89d80.sectionIconContainer__89d80:hover {
-  background-color: var(--card-button-color-hover);
-}
-
-
-/* USER SETTINGS PROFILES -> TRY OUT NITRO SECTION */
-.tryItOutSection__9d295 {
-  position: relative;
-  margin: 16px 0 0;
-  padding: 0;
-  border-radius: var(--card-radius-big);
-  border: none;
-}
-.tryItOutSection__9d295:before {
-  position: absolute;
-  content: " ";
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
-  top: 0;
-  left: 0;
-  background: linear-gradient(var(--main-alt), var(--main-alt)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1) * 52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1) * 31.7%), 51.8%)) border-box;
-  border-radius: inherit;
-  border: 2px solid transparent;
-}
-.tryItOutSection__9d295 .premiumBackground__65c15 {
-  padding: 16px;
-  background: var(--card-color-filled);
-  border-radius: var(--card-radius-big);
-}
-
-
-
-
-/*
- *
- *  USER SETTINGS REGISTERED GAMES
- *
- */
-.notDetected_cc46f0 {
-  background-color: var(--card-color-filled) !important;
-  border: none !important;
-  padding: 16px;
-  border-radius: var(--card-radius-big) !important;
-}
-.notDetected_cc46f0 .gameName_cc46f0 {
-  color: var(--text-normal) !important;
-}
-.notDetected_cc46f0 .lastPlayed_cc46f0 {
-  color: var(--text-muted) !important;
-}
-
-.nowPlaying_cc46f0 {
-  border-radius: var(--card-radius-big);
-  border: none;
-}
-.nowPlaying_cc46f0 .flowerStar__3e3b0 path {
-  fill: #fff;
-}
-.nowPlaying_cc46f0 .childContainer__3e3b0 path {
-  fill: #000;
-}
-
-.nowPlayingAdd_cc46f0 {
-  margin: 16px 0;
-  color: var(--text-normal) !important;
-}
-.nowPlayingAdd_cc46f0 .lookLink__201d5 {
-  margin-left: 8px;
-}
-.nowPlayingAdd_cc46f0 + .marginTop40_fd297e {
-  margin-top: 0;
-}
-.nowPlayingAdd_cc46f0 + .marginTop40_fd297e .eyebrow_b717a1 {
-  margin-bottom: 0;
-  padding: 16px;
-  background-color: transparent;
-  font-size: 1.25em;
-  line-height: normal;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-  opacity: 1;
-  padding: 16px 16px 8px;
-  background-color: var(--card-color-filled);
-  border-radius: var(--card-radius-big) var(--card-radius-big) 0 0;
-}
-.nowPlayingAdd_cc46f0 + .marginTop40_fd297e .description_ddd181 {
-  padding: 0 16px;
-  background-color: var(--card-color-filled);
-}
-
-.game_cc46f0 {
-  padding: 16px;
-  background-color: var(--card-color-filled);
-  border-radius: 0 !important;
-  border: none;
-}
-.game_cc46f0:last-of-type {
-  padding-bottom: 24px;
-  border-radius: 0 0 var(--card-radius-big) var(--card-radius-big) !important;
-  box-shadow: none !important;
-}
-.game_cc46f0:last-of-type:before {
-  height: calc(100% - 8px);
-  bottom: 8px;
-}
-.game_cc46f0:before {
-  width: calc(100% - 16px);
-  height: 100%;
-  left: 8px;
-  right: 4px;
-  bottom: unset;
-  background-color: var(--card-color-hover);
-  border-radius: calc(var(--card-radius-big) / 1.5);
-  border: none;
-  pointer-events: none;
-  transition: var(--default-time) var(--default-animation) opacity;
-}
-.game_cc46f0 .gameName_cc46f0 {
-  font-weight: 500;
-}
-.game_cc46f0:hover .gameNameInput_cc46f0 {
-  background-color: var(--input-color-alt);
-}
-.game_cc46f0 .gameNameInput_cc46f0 {
-  margin-left: -4px;
-  padding: 0 4px;
-  border: none;
-  border-radius: 12px;
-  line-height: 24px;
-  transition: var(--default-time) var(--default-animation) background-color;
-}
-.game_cc46f0 .gameNameInput_cc46f0:hover, .game_cc46f0 .gameNameInput_cc46f0:focus {
-  background-color: var(--input-color-alt);
-}
-.game_cc46f0 .overlayStatusText__668e1 {
-  color: var(--text-muted) !important;
-}
-.game_cc46f0 .button_e18686 {
-  right: -12px;
-}
-
-/*
- *
- *  USER SETTINGS SERVER BOOST
- *
- */
-.cardWrapper_aae012 {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 0;
-  border-radius: var(--card-radius-big);
-}
-.cardWrapper_aae012 .card__11580 {
-  border-radius: var(--card-radius-big);
-}
-
-.wrapper_adaea0 {
-  border-radius: var(--card-radius-big);
-}
-
-.header__99020 {
-  background-color: var(--card-color-filled);
-  border-radius: var(--card-radius-big);
-}
-
-.border__8d6b3 {
-  display: none;
-}
-
-.guild__74638 {
-  background-color: var(--card-color-outlined);
-  border: 1px solid var(--card-border-color);
-  padding: 0;
-  border-radius: var(--card-radius-big);
-}
-.guild__74638 .guildHeader__30707 {
-  background-color: transparent;
-  border-bottom: 1px solid var(--card-border-color);
-}
-
-.guildSubscriptionSlots__5823d {
-  padding: 0;
-  background-color: transparent;
-}
-.guildSubscriptionSlots__5823d .guildSubscriptionSlot_b76fc6 {
-  padding: 16px;
-  position: relative;
-  border-bottom: none;
-}
-.guildSubscriptionSlots__5823d .guildSubscriptionSlot_b76fc6:after {
-  position: absolute;
-  content: " ";
-  width: calc(100% - 16px * 2);
-  height: 1px;
-  right: 0;
-  bottom: 0;
-  margin: 0 16px;
-  background-color: var(--card-border-color);
-}
-.guildSubscriptionSlots__5823d .guildSubscriptionSlot_b76fc6:last-of-type:after {
-  display: none;
-}
-
-.wrapper__5b98e {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 24px 24px 8px;
-  border-radius: var(--card-radius-big);
-}
-.wrapper__5b98e .heading__5b98e {
-  font-weight: 400;
-}
-.wrapper__5b98e .list__5b98e {
-  border-top: none;
-}
-.wrapper__5b98e .listItem__5b98e {
-  border-bottom-color: var(--card-border-color);
-}
-.wrapper__5b98e .listItem__5b98e:last-child {
-  border-bottom: none;
-}
-
-/*
- *
- *  USER SETTINGS THEME EDITOR
- *
- */
-.themeEditor_cf6da1 {
-  margin-left: 8px;
-  padding: 0;
-  background-color: var(--chat-color);
-  border-radius: var(--card-radius-big) var(--card-radius-big) 0 var(--card-radius-big);
-  border-left: none;
-}
-.themeEditor_cf6da1:before, .themeEditor_cf6da1:after {
-  position: absolute;
-  content: " ";
-  width: var(--card-radius-big);
-  height: var(--card-radius-big);
-  left: calc((var(--card-radius-big) + 8px) * -1);
-  bottom: 0;
-  pointer-events: none;
-}
-.themeEditor_cf6da1:before {
-  background-color: var(--main-alt);
-}
-.themeEditor_cf6da1:after {
-  background-color: var(--chat-color);
-  border-bottom-right-radius: var(--card-radius-big);
-}
-.themeEditor_cf6da1 .editorHeader_cf6da1 {
-  padding: 16px;
-}
-.themeEditor_cf6da1 .editorFooter_cf6da1 {
-  padding: 0 16px 16px;
-}
-.themeEditor_cf6da1 .heading-lg\/extrabold_cf4812 {
-  font-size: 1.25em;
-  line-height: normal;
-  color: var(--card-header-text-color);
-  font-weight: 400;
-}
-.themeEditor_cf6da1 .selectionGroup_cf6da1 {
-  margin-top: 0;
-}
-.themeEditor_cf6da1 div[role=radiogroup] {
-  margin-bottom: 24px;
-  background-color: transparent;
-  border: none;
-}
-
-/*
- *
- *  USER SETTINGS VOICE AND VIDEO
- *
- */
-.soundButtonSettingContainer__84bad {
-  background-color: var(--card-color-hover);
-  border-radius: calc(var(--card-radius-big) / 1.65);
-}
-
-.deviceOptionCertified_fe5040 {
-  width: 18px;
-  height: 18px;
-  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/verified_check.svg);
-  -webkit-mask-repeat: no-repeat;
-  background-color: hsl(var(--accent-hsl--material-you));
-  object-position: -99999px 99999px;
-}
-
-.micTestButton__169b3 {
-  width: auto;
-}
-
-.wrapper__06283 {
-  height: 4px;
-  border-radius: 2px;
-  overflow: hidden;
-}
-.wrapper__06283 .container__06283 {
-  width: 100% !important;
-}
-.wrapper__06283 [style*="background: linear-gradient(to right, var(--yellow-260), var(--green-360))"].container__06283 {
-  background: var(--success-color) !important;
-}
-.wrapper__06283 .progress__06283 {
-  background-color: var(--card-color-hover);
-}
-.wrapper__06283 .notches__06283 {
-  display: none;
-}
-
-.micTestCaption__8f8f8 {
-  top: 22px;
-  left: 148px;
-}
-
-.inputSensitivityBar_ac7648 .fill_ac7648 {
-  height: 4px !important;
-  background-color: var(--accent-text-color--material-you) !important;
-  border-radius: 2px;
-  transition: var(--default-time) var(--default-animation) width !important;
-}
-
-.cameraWrapper_d41d5f {
-  background-color: var(--card-color-filled);
-  border: none;
-  padding: 0;
-  border-radius: var(--card-radius-big);
-}
-.cameraWrapper_d41d5f video {
-  border-radius: var(--card-radius-big);
-}
-
-.backgroundOption__53965 {
-  border-radius: var(--card-radius-big);
-}
-
-.backgroundOptionRing__53965 {
-  border-radius: var(--card-radius-big);
-  border-color: hsl(var(--accent-hsl--material-you));
-}
-
-.backgroundOptionInner__53965 {
-  background-color: var(--card-color-filled);
-  border-radius: calc(var(--card-radius-big) - 4px);
-}
-.backgroundOptionInner__53965 .backgroundOptionContent__53965 {
-  color: var(--text-normal);
-}
-/*
- *
- *  SETTINGS CONTENT AREA
- *
- */
-.contentRegion__23e6b {
-  background-color: #00ff00 !important;
-  overflow: hidden;
-}
-.contentRegion__23e6b .h1_b717a1,
-.contentRegion__23e6b .heading-lg\/semibold_cf4812,
-.contentRegion__23e6b .bd-settings-title {
-  font-size: 22px;
-  font-weight: 400;
-}
-.contentRegion__23e6b .bd-settings-group-title {
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-}
-
-.eyebrow_b717a1 {
-  font-weight: 500;
-}
-
-/*
- *
- *  USER SETTINGS
- *
- */
-.layer__960e4,
-.standardSidebarView__23e6b {
-  background-color: #2b2d31 !important;
-}
-
-
-.contentRegion__23e6b {
-  background-color: #313338 !important;
-  border-radius: var(--card-radius-big) var(--card-radius-big) 0 var(--card-radius-big);
-}
-.contentRegion__23e6b .contentRegionScroller__23e6b {
-  background-color: transparent;
-}
-
-.closeButton_c2b141 {
-  position: relative;
-  border: none;
-}
-.closeButton_c2b141:after {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: hsl(var(--md-ripple-color), 0.1);
-  border-radius: 50%;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(1.2);
-  transition: 300ms ease;
-  z-index: 4;
-}
-.closeButton_c2b141:hover:after {
-  opacity: 1;
-  transform: scale(1.2);
-  animation: scale 150ms var(--default-animation), opacity 150ms ease;
-}
-.closeButton_c2b141:active:after {
-  background-color: hsl(var(--md-ripple-color), 0.2);
-}
-.closeButton_c2b141:hover {
-  background-color: transparent !important;
-}
-.closeButton_c2b141:active {
-  transform: translateX(0px);
-}
-
-.noticeRegion__23e6b,
-.saveNoticeContainer__51673 {
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.saveNoticeContainer__51673 {
-  left: 252px;
-}
-
-.container_fcf29c {
-  padding: 8px 8px 8px 16px;
-  background-color: var(--popout-color) !important;
-  border-radius: 4px;
-  box-shadow: var(--shadow-2dp) !important;
-}
-.container_fcf29c .actions_fcf29c {
-  flex-direction: row-reverse;
-}
-.container_fcf29c .lookFilled__201d5 {
-  --button-padding: 0 12px;
-  --button-background: transparent;
-  --button-text-color: hsl(var(--accent-hsl--material-you));
-  --accent-button-action-hover: 0.14;
-  --accent-button-action-active: 0.21;
-}
-.container_fcf29c .lookFilled__201d5:after {
-  --accent-button-action: hsl(var(--button-link-accent-color));
-}
-.container_fcf29c .resetButton_fcf29c {
-  --button-padding: 0;
-  min-width: var(--button-height);
-  margin-left: 0;
-  font-size: 0;
-}
-.container_fcf29c .resetButton_fcf29c:before {
-  display: flex;
-  position: absolute;
-  content: " ";
-  width: 18px;
-  height: 18px;
-  -webkit-mask-image: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/outline/close.svg);
-  -webkit-mask-repeat: no-repeat;
-  background-color: var(--text-normal);
-  transform: scale(1.333333);
-}
-.container_fcf29c .resetButton_fcf29c .contents__201d5 {
-  display: none;
-}
-
-.keybind-13vtq8 {
-  color: var(--text-muted) !important;
-}
-
 
 /* Fix My Account box? */
 .accountProfileCard__1fed1 {
@@ -1311,5 +493,41 @@ background: #3c4a7f !important;
 .container_faa96b:hover.mainCard_f369db {
 	background-color: #2b2d31 !important;
     outline: 4px solid #52555e; /* Red outline on hover */
+}
 
+
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background-color: #2b2d31 !important;
+}
+
+.scroller_a9e706.thin_d125d2.scrollerBase_d125d2 {
+	background-color: #2b2d31 !important;
+}
+
+.searchHeader_f3b986 {
+	background-color: #2b2d31 !important;
+}
+
+.nowPlayingColumn__133bf {
+	background-color: #2b2d31 !important;
+}
+
+.jumpToPresentBar__0f481.bottomBar__0f481.barBase__0f481.barWithAppLauncherButton__0f481 {
+	background-color: #2b2d31 !important;
+}
+
+/* Online / All / Implicit */
+.item__133bf.item_b3f026.selected_b3f026.themed_b3f026 {
+	background-color: #43434a !important;
+}
+.item__133bf:hover.item_b3f026.selected_b3f026.themed_b3f026 {
+	background-color: #4f4f59 !important;
+	    transition: none !important;
+}
+
+.container__133bf > .container__9293f {
+	background-color: #2b2d31 !important;
 }
