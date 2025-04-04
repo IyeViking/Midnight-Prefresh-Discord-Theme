@@ -221,9 +221,6 @@ body {
 	background-color: #ffffff !important;
 }
 
-.header_f37cb1 {
-    box-shadow: 0px 2px 0px rgba(33, 34, 37, 1) !important;
-}
 
 .1title_f75fb0.container__9293f.themed__9293f {
     background-color: #313338; /* Adjust to your desired color */
@@ -530,4 +527,43 @@ background: #3c4a7f !important;
 
 .container__133bf > .container__9293f {
 	background-color: #2b2d31 !important;
+}
+
+/* Coloured Role Icons in User Profile*/
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
+}
+
+.role_dfa8b6.pill_dfa8b6 > span {
+    z-index: 1;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
 }
