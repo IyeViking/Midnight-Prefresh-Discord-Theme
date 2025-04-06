@@ -348,6 +348,10 @@ body {
     background-color: #da3e44 !important; /* Change to your desired hover background color */
 }
 
+.bar_c38106 {
+	transform: translateX(-1px) !important;
+}
+
 /* Default button color */
 .button__201d5.lookFilled__201d5.colorRed__201d5 {
     background-color: #ba2f31 !important; /* Change to your desired color */
@@ -446,7 +450,7 @@ body {
 
 /* Normal state of the progress bar fill */
 .bar_a562c8 .barFill_a562c8 {
-  background-color: #1db954; /* Red color for the progress fill */
+  background-color: #1db954 !important; /* Red color for the progress fill */
   transition: background-color 0.3s ease; /* Smooth transition for color change */
 }
 
@@ -567,3 +571,25 @@ background: #3c4a7f !important;
     filter: brightness(1.1);
     opacity: 0.25;
 }
+
+/* Unreads Bar Fix? */
+.container__7aaec.bottom__7aaec {
+	transform: translateY(10px); /* Move it up by 10px */
+}
+.bar__7aaec {
+	background-color: #111214 !important;
+}
+
+.messagesPopout__45690.thin_d125d2.scrollerBase_d125d2 {
+	background-color: #1e1f22 !important;
+}
+
+.header__45690 {
+		background-color: #1e1f22 !important;
+}
+
+.list_c441f0.thin__99f8c.scrollerBase__99f8c.fade__99f8c {
+	background-color: #1e1f22 !important;
+}
+
+
