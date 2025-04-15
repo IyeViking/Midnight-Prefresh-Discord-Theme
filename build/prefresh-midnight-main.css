@@ -2,8 +2,6 @@
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 
-
-
  /*Custom code edit here */
 body {
     /* font, change to '' for default discord font, default midnight font is figtree */
@@ -336,6 +334,54 @@ body {
     fill: #c23234 !important; /* Replace 'red' with your desired color */
 }
 
+/* Change text color for the 'Report Message' option */
+#message-report .label_c1e9c4 {
+    color: #dd3336 !important; /* Replace 'red' with your desired color */
+}
+
+/* Change icon color for the 'Report Message' option */
+#message-report .icon_c1e9c4 path {
+    fill: #c23234 !important; /* Replace 'red' with your desired color */
+}
+
+/* Change icon color for the 'Delete Message' option */
+#message-report:hover {
+    fill: #00ff00 !important; /* Replace 'red' with your desired color */
+}
+
+/* Change background and text/icon color on hover */
+#message-delete:hover {
+    background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
+}
+
+#message-delete:hover .label_c1e9c4 {
+    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
+}
+
+#message-delete:hover .icon_c1e9c4 path {
+    fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
+}
+
+/* Change background and text/icon color on hover */
+#message-report:hover {
+    background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
+
+}
+
+#message-report:hover .label_c1e9c4 {
+    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
+}
+
+#message-report:hover .icon_c1e9c4 path {
+    fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
+}
+
+.item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4:not(#message-delete):hover {
+    background-color: #323752 !important;
+}
+
+
+
 /* */
 
 
@@ -368,18 +414,6 @@ body {
     background-color: #323752 !important;
 }
 
-/* Change background and text/icon color on hover */
-#message-delete:hover {
-    background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
-}
-
-#message-delete:hover .label_c1e9c4 {
-    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
-}
-
-#message-delete:hover .icon_c1e9c4 path {
-    fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
-}
 
 .welcomeCTAButtonOuter_f5d1e2 {
     background-color: #4e5058 !important; /* Change to your desired color */
@@ -471,6 +505,8 @@ body {
   background: #00ff00;
 }
 
+
+/* Highlight */
 ::selection {
 background: #3c4a7f !important;
 }
@@ -573,9 +609,10 @@ background: #3c4a7f !important;
 }
 
 /* Unreads Bar Fix? */
-.container__7aaec.bottom__7aaec {
-	transform: translateY(10px); /* Move it up by 10px */
+.unreadBottom__629e4.unread__629e4.container__3b95d {
+	transform: translateY(240px) !important; /* Move it up by 10px */
 }
+
 .bar__7aaec {
 	background-color: #111214 !important;
 }
@@ -592,4 +629,44 @@ background: #3c4a7f !important;
 	background-color: #1e1f22 !important;
 }
 
+
+/* BetterFolders fix ty @h4t_k1d on disc */
+.visual-refresh {
+    .vc-betterFolders-sidebar-grid {
+        grid-template-columns: [start] min-content [guildsEnd] min-content [sidebarEnd] min-content [channelsEnd] 1fr [end];
+        .sidebarList_c48ade {
+            width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - var(--gap));
+        }
+        .sidebar_c48ade:not(:has(:nth-child(2) > [aria-label='Servers sidebar'])) {
+            column-gap: 0;
+        }
+        .panels_c48ade {
+            max-width: calc(var(--custom-guild-sidebar-width) + 2 * var(--gap) + 4px + 66px);
+        }
+    }
+}
+
+@container body style(--small-user-panel: on) {
+    .visual-refresh {
+        .vc-betterFolders-sidebar-grid {
+            grid-template-areas:
+                'titleBar titleBar titleBar titleBar'
+                'guildsList betterFoldersSidebar notice notice'
+                'guildsList betterFoldersSidebar channelsList page'
+                'guildsList betterFoldersSidebar userPanel page';
+        }
+    }
+}
+
+@container body style(--small-user-panel: off) {
+    .visual-refresh {
+        .vc-betterFolders-sidebar-grid {
+            grid-template-areas:
+                'titleBar titleBar titleBar titleBar'
+                'guildsList betterFoldersSidebar notice notice'
+                'guildsList betterFoldersSidebar channelsList page'
+                'userPanel userPanel userPanel page';
+        }
+    }
+}
 
