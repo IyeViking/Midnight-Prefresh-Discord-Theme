@@ -110,8 +110,8 @@ body {
 
     /* border colors */
     --border-light: hsl(230, 20%, 40%, 0.1); /* light border color */
-    --border: hsl(230, 20%, 40%, 0.2); /* normal border color */
-    --button-border: hsl(0, 0%, 100%, 0.1); /* neutral border color of buttons */
+    --border: rgba(0, 0, 0, 0); /* normal border color */
+    --button-border: rgba(0, 0, 0, 0); /* neutral border color of buttons */
 
     /* base colors */
     --red-1: oklch(76% 0.12 0);
@@ -672,4 +672,16 @@ background: #3c4a7f !important;
 
 [class*="blockquoteDivider__75297"] {
 	background-color: #6a8ab4 !important;
+}
+
+div[role="menuitem"][id="message-ml-remove-history"] {
+    color: #f04747 !important; /* Redder text by default */
+    background-color: transparent !important;
+    transition: none !important;
+}
+
+div[role="menuitem"][id="message-ml-remove-history"]:hover {
+    background-color: #f04747 !important; /* Red background on hover */
+    color: white !important; /* White text on hover */
+    border-radius: 4px !important;
 }
