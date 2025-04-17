@@ -196,6 +196,7 @@ body {
 	background-color: #ffffff !important;
 }
 
+/* Round server icons */
 [class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
 [data-list-item-id*="guildsnav_"] > [class*="icon_"] {
     border-radius: 50% !important;
@@ -264,7 +265,7 @@ body {
 /* Increase the folder size */
 .visual-refresh .expandedFolderBackground__48112 {
     width: 90%;
-    left: 2.9px;
+    left: 3.1px;
     
 }
 .wrapper__48112 {
@@ -287,14 +288,6 @@ body {
     border-radius: 50% !important 
 }
 
-/* Move the Add Server button upwards */
-.tutorialContainer__650eb {
-    margin-top: 0px;
-}
-
-.trailing_c38106 {
-	transform: (1.5)
-}
 
  /* remove help button */
         .trailing_c38106 > a[href="https://support.discord.com"]
@@ -320,6 +313,12 @@ body {
     fill: #c23234 !important; /* Replace 'red' with your desired color */
 }
 
+/* Change background and text/icon color on hover */
+#message-delete:hover {
+    background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
+}
+
+
 /* Change text color for the 'Report Message' option */
 #message-report .label_c1e9c4 {
     color: #dd3336 !important; /* Replace 'red' with your desired color */
@@ -333,11 +332,6 @@ body {
 /* Change icon color for the 'Delete Message' option */
 #message-report:hover {
     fill: #00ff00 !important; /* Replace 'red' with your desired color */
-}
-
-/* Change background and text/icon color on hover */
-#message-delete:hover {
-    background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
 }
 
 #message-delete:hover .label_c1e9c4 {
@@ -637,3 +631,6 @@ div[role="menuitem"][id="message-ml-remove-history"]:hover {
   display: none;
 }
 
+div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
+	background-color: #2b2d31 !important;
+}
