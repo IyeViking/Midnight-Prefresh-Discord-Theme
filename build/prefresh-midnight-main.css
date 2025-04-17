@@ -238,20 +238,6 @@ body {
 
 /* ///////////// Server bar ///////////// */
 
-/* If you use --move-top-bar-buttons : on; */
-
-/* Make inbox button bigger */
-.visual-refresh .recentsIcon_c99c29 {
-    width: 50px;
-    height: 50px;
-    top: calc(var(--custom-app-top-bar-height) + 10px + var(--custom-guild-list-padding) + 48px);
-    left: calc(var(--gap) - 4px + var(--custom-guild-list-padding));
-}
-.visual-refresh .button__85643 svg {
-    width: calc(var(--chat-input-icon-size) * 1.4);
-    height: calc(var(--chat-input-icon-size) * 1.4);
-}
-
 /* Move the line downwards */
 .visual-refresh .guildSeparator__252b6 {
     position: absolute;
@@ -650,3 +636,4 @@ div[role="menuitem"][id="message-ml-remove-history"]:hover {
 .title_c38106 {
   display: none;
 }
+
