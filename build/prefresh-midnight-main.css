@@ -111,7 +111,7 @@ body {
     --online: #23a55a; /* change to #43a25a for default */
     --dnd: #d83a42; /* change to #d83a42 for default */
     --idle: #f0b232; /* change to #ca9654 for default */
-    --streaming: var(--purple-2); /* change to #593695 for default */
+    --streaming: #8c45f7; /* change to #593695 for default */
     --offline: #83838b; /* change to #83838b for default offline color */
 
     /* border colors */
@@ -314,6 +314,8 @@ body {
     opacity: 0 !important;
 }
 
+
+
 /* Change text color for the 'Delete Message' option */
 #message-delete .label_c1e9c4 {
     color: #dd3336 !important; /* Replace 'red' with your desired color */
@@ -329,22 +331,6 @@ body {
     background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
 }
 
-
-/* Change text color for the 'Report Message' option */
-#message-report .label_c1e9c4 {
-    color: #dd3336 !important; /* Replace 'red' with your desired color */
-}
-
-/* Change icon color for the 'Report Message' option */
-#message-report .icon_c1e9c4 path {
-    fill: #c23234 !important; /* Replace 'red' with your desired color */
-}
-
-/* Change icon color for the 'Delete Message' option */
-#message-report:hover {
-    fill: #00ff00 !important; /* Replace 'red' with your desired color */
-}
-
 #message-delete:hover .label_c1e9c4 {
     color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
 }
@@ -353,10 +339,26 @@ body {
     fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
 }
 
+
+
 /* Change background and text/icon color on hover */
 #message-report:hover {
-    background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
+    background-color: #00ff00 !important; /* Replace 'darkred' with your desired hover background color */
+}
 
+/* Change text colour for the 'Report Message' option */
+#message-report .label_c1e9c4 {
+    color: #dd3336 !important; /* Replace 'red' with your desired color */
+}
+
+/* Change icon colour for the 'Report Message' option */
+#message-report .icon_c1e9c4 path {
+    fill: #c23234 !important; /* Replace 'red' with your desired color */
+}
+
+/* Change hover colour for the 'Report Message' option */
+#message-report:hover .label_c1e9c4 {
+    fill: #00ff00 !important; /* Replace 'red' with your desired color */
 }
 
 #message-report:hover .label_c1e9c4 {
@@ -367,10 +369,54 @@ body {
     fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
 }
 
+#message-report.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
+	background-color: #a02c30 !important;
+}
+
+
+
+/* Change colour for the 'Remove Message History' option */
+#message-ml-remove-history .label_c1e9c4 {
+  color: #dd3336 !important;
+}
+/* Change hover colour for the 'Remove Message History' option */
+#message-ml-remove-history:hover .label_c1e9c4 {
+    fill: #00ff00 !important; /* Replace 'red' with your desired color */
+}
+
+#message-ml-remove-history:hover .label_c1e9c4 {
+    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
+}
+
+#message-ml-remove-history.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
+	background-color: #a02c30 !important;
+}
+
+
+/* Leave Server */
+#guild-context-leave-guild.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
+	background-color: #a02c30 !important;
+}
+
+/* Change colour for the 'Leave Server' option */
+#guild-context-leave-guild .label_c1e9c4 {
+  color: #dd3336 !important;
+}
+/* Change hover colour for the 'Leave Server' option */
+#guild-context-leave-guild:hover .label_c1e9c4 {
+    fill: #00ff00 !important; /* Replace 'red' with your desired color */
+}
+
+#guild-context-leave-guild:hover .label_c1e9c4 {
+    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
+}
+
+
+/* idk what this does
 .item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4:not(#message-delete):hover {
     background-color: #323752 !important;
 }
-
+*/
 
 
 /* */
@@ -406,7 +452,7 @@ body {
 }
 
 .item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4:not(#message-delete):hover {
-    background-color: #323752 !important;
+    background-color: #30313d !important;
 }
 
 
