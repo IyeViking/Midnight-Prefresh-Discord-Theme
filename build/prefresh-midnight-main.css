@@ -4,6 +4,7 @@
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
 @import url('https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css');
 
+
  /*Custom code edit here */
 body {
     /* font, change to '' for default discord font, default midnight font is figtree */
@@ -172,6 +173,11 @@ body {
 .searchBar__35e86 {
 	background-color: #2b2d31 !important;
 }
+
+.searchBar__97492 {
+	background-color: #1e1f22 !important;
+}
+
 
 .subtitleContainer_f75fb0 {
 	background-color: #2b2d31 !important;
@@ -373,7 +379,7 @@ body {
   display: none; 
 }
 
-/* Move down search bar / other icons */
+/* Move search bar / other icons */
 [class*="toolbar__9293f"] {
   position: relative;
   left: 60px;
@@ -642,4 +648,13 @@ div[role="menuitem"][id="message-ml-remove-history"]:hover {
 
 div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
 	background-color: #2b2d31 !important;
+}
+
+.topicsPillContainer__0f481 {
+  width: 95%; /* or a fixed width like 500px */
+  max-width: 100%; /* prevents overflow */
+  margin: 0 auto; /* center it horizontally if it's not full-width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
