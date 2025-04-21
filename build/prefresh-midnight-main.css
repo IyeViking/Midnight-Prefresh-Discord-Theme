@@ -90,14 +90,14 @@ body {
     --bg-2: #1e1f22; /* dark buttons */
     --bg-3: #28282d; /* spacing, secondary elements*/ 
     --bg-4: #313338	; /* main background color */
-    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
-    --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
+    --hover: #26282b; /* channels and buttons when hovered */
+    --active: hsla(220, 15%, 40%, 0.3); /* channels and buttons when clicked or selected */
     --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
     --message-hover: hsla(230, 0%, 0%, 0.1); /* messages when hovered */
 
     /* accent colors */
     --accent-1: #75a5e5; /* links and other accent text */
-    --accent-2: #5764f0; /* small accent elements */
+    --accent-2: #6e85d3; /* small accent elements */
     --accent-3: #555fc9; /* accent buttons */
     --accent-4: #4654c0; /* accent buttons when hovered */
     --accent-5: #3a48a3; /* accent buttons when clicked */
@@ -149,7 +149,12 @@ body {
     --purple-3: oklch(64% 0.11 310);
     --purple-4: oklch(58% 0.11 310);
     --purple-5: oklch(52% 0.11 310);
+
+	/* My colours */
+
 	--text-white: #FFFFFFC9;
+
+
 
 }
 
