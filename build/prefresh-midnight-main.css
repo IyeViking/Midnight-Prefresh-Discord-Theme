@@ -300,22 +300,6 @@ body {
 }
 
 
- /* remove help button */
-        .trailing_c38106 > a[href="https://support.discord.com"]
-        {
-            display: none;
-        }
-
-.recentsIcon_c99c29 {
-    display: none;
-}
-
-.sidebarResizeHandle_c48ade {
-    opacity: 0 !important;
-}
-
-
-
 /* Change text color for the 'Delete Message' option */
 #message-delete .label_c1e9c4 {
     color: #dd3336 !important; /* Replace 'red' with your desired color */
@@ -425,14 +409,28 @@ body {
   display: none; 
 }
 
+
+
 /* Move search bar / other icons */
 [class*="toolbar__9293f"] {
   position: relative;
-  left: 60px;
+  left: 12px;
 }
+
+
 .children__9293f::after {
   display: none;
 }
+
+.recentsIcon_c99c29 {
+  position: relative;
+  left: 13px;
+}
+
+.sidebarResizeHandle_c48ade {
+    opacity: 0 !important;
+}
+
 
 /* Change colour of the close button when hovered */
 .winButtonClose_c38106:hover {
