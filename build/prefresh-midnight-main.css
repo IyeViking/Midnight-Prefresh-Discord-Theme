@@ -129,7 +129,7 @@ body {
     --red-5: oklch(52% 0.12 0);
 
     --green-1: oklch(76% 0.11 170);
-    --green-2: oklch(70% 0.11 170);
+    --green-2: #338b49;
     --green-3: oklch(64% 0.11 170);
     --green-4: oklch(58% 0.11 170);
     --green-5: oklch(52% 0.11 160);
@@ -155,11 +155,12 @@ body {
 	/* My colours */
 
 	--text-white: #FFFFFFC9;
-
-
-
 }
 
+/* Change background and text colour of the join call buttons, --green-2 is the non hover colour */
+.staticButton_f1ceac.colorable_f1ceac.join_f1ceac:hover {
+  background-color: #22823b !important; /* Discord blurple example */
+}
 
 .container_c8ffbb {
     background-color: #2b2d31 !important;
@@ -340,6 +341,7 @@ body {
     fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
 }
 
+/*
 
 
 /* Change background and text/icon color on hover */
@@ -374,6 +376,30 @@ body {
 	background-color: #a02c30 !important;
 }
 
+
+/* Block User Option */
+/* Change background and text/icon color on hover */
+#user-context-block:hover {
+    background-color: #00ff00 !important; /* Replace 'darkred' with your desired hover background color */
+}
+
+/* Change text colour for the 'Block' option */
+#user-context-block .label_c1e9c4 {
+    color: #dd3336 !important; /* Replace 'red' with your desired color */
+}
+
+/* Change hover colour for the 'Block' option */
+#user-context-block:hover .label_c1e9c4 {
+    fill: #00ff00 !important; /* Replace 'red' with your desired color */
+}
+
+#user-context-block:hover .label_c1e9c4 {
+    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
+}
+
+#user-context-block.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
+	background-color: #a02c30 !important;
+}
 
 
 /* Change colour for the 'Remove Message History' option */
