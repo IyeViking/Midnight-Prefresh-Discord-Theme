@@ -13,7 +13,7 @@ body {
 
     /* sizes */
     --gap: 6px; /* spacing between panels */
-    --divider-thickness: 2px; /* thickness of unread messages divider and highlighted message borders */
+    --divider-thickness: 20x; /* thickness of unread messages divider and highlighted message borders */
     --border-thickness: 0px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
 
     /* animation/transition options */
@@ -155,7 +155,42 @@ body {
 	/* My colours */
 
 	--text-white: #FFFFFFC9;
+	
+	/* Scrollable Codeblocks */
+	--codeblock-height: 200px;
 }
+
+/* Scrollable Codeblocks */
+.codeContainer__75297 > code {
+  max-height: var(--codeblock-height);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+    &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
+    /* visibility: hidden; */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--scrollbar-thin-thumb);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    min-height: 40px;
+  }
+  &:hover::-webkit-scrollbar-track, &:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-thin-track);
+    border: 2px solid var(--scrollbar-thin-track);
+    border-color: var(--scrollbar-thin-track);
+	}
+}
+/* Scrollable Codeblocks */
 
 /* Change background and text colour of the join call buttons, --green-2 is the non hover colour */
 .staticButton_f1ceac.colorable_f1ceac.join_f1ceac:hover {
@@ -254,15 +289,19 @@ body {
     font-size: 10px;
 }
 
-	/* Chat divider colour */
-.divider__5126c,.divider__908e2 {
-  border-color: #3e3f45 !important; /* Change this to any color you want */
-}
-
 .mentioned__5126c::before {
   background-color: #ff4d4f !important;
 
 }
+
+/* Change color of the date/time divider only */
+.divider__5126c.hasContent__5126c {
+  --divider-color: #3e3f45; /* Replace with your desired color */
+  color: var(--divider-color); /* Affects text (e.g., date) */
+  border-color: var(--divider-color); /* Affects the line */
+}
+
+
 
 
 
@@ -761,3 +800,4 @@ div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
 .scrollerBase__99f8c::-webkit-scrollbar-thumb:hover {
 	background-color: #232428;
 }
+
