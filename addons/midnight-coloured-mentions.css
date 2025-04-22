@@ -22,7 +22,7 @@
   top: 50%;
   left: 0;
   transform: translate(4px, -50%);
-  height: 70%; /* change this value as needed */
+  height: 80%; /* change this value as needed */
   width: 2px;
   background-color: currentColor; /* Uses the color of the mention text */
   filter: saturate(var(--saturation-factor, 1));
