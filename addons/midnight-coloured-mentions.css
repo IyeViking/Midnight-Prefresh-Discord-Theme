@@ -25,7 +25,7 @@
   transform: translate(4px, -50%);
   height: 80%; /* change this value as needed */
   width: 2px;
-  background-color: currentColor; /* Uses the color of the mention text */
+  background-color: currentColor !important; /* Uses the color of the mention text */
   filter: saturate(var(--saturation-factor, 1));
   pointer-events: none;
 }
@@ -36,7 +36,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: currentColor;
+  background-color: currentColor !important;
   opacity: 0.1;
   z-index: -1;
   pointer-events: none;
@@ -46,7 +46,7 @@
 
 /* Fallback color for user mentions — excluding replies */
 .mentioned__5126c:not(.hasReply_c19a55) .mention:not(.roleMention__75297):after {
-  background-color: var(--brand-500);
+  background-color: var(--brand-500) !important;
   opacity: 0.1;
 }
 
@@ -55,7 +55,7 @@
   background-color: currentColor;
 }
 .roleMention__75297[style]:after {
-  background-color: currentColor;
+  background-color: currentColor !important;
   filter: saturate(var(--saturation-factor, 1));
   opacity: 0.1;
 }
