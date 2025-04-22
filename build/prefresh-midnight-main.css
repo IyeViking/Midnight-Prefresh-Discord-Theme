@@ -2,14 +2,14 @@
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
-@import url('https://davart154.github.io/Themes/Snippets/Colored%20Mentions/ColoredMentionsSource.css');
-
+@import url('https://raw.githubusercontent.com/IyeViking/Midnight-Prefresh-Discord-Theme/refs/heads/main/addons/midnight-coloured-mentions.css');
 
  /*Custom code edit here */
 body {
-    /* font, change to '' for default discord font, default midnight font is figtree */
-    --font: '';
-    font-weight: 400 /* normal text font weight. DOES NOT AFFECT BOLD TEXT */;
+    /* font options */
+    --font: ''; /* change to '' for default discord font, 'figtree' for midnight font */
+    --code-font: ''; /* change to '' for default discord font */
+    font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
 
     /* sizes */
     --gap: 6px; /* spacing between panels */
@@ -20,10 +20,11 @@ body {
     --animations: on; /* off: disable animations/transitions, on: enable animations/transitions */
     --list-item-transition: 0.2s ease; /* transition for list items */
     --dms-icon-svg-transition: 0.4s ease; /* transition for the dms icon */
+    --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
 
-/* top bar options */
-    --top-bar-height: 18px; /* height of the titlebar/top bar (discord default is 36px, 24px recommended if moving/hiding top bar buttons) */
-    --top-bar-button-position: titlebar; /* off: default position, hide: hide inbox/support buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to titlebar (will hide title) */
+    /* top bar options */
+    --top-bar-height: var(--gap); /* height of the top bar (Prefresh had 18px, discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
     --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
     --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
 
@@ -117,6 +118,7 @@ body {
     /* border colors */
     --border-light: hsl(230, 20%, 40%, 0.1); /* light border color */
     --border: rgba(0, 0, 0, 0); /* normal border color */
+    --border-hover: var(--active); /* border color of panels when hovered */
     --button-border: rgba(0, 0, 0, 0); /* neutral border color of buttons */
 
     /* base colors */
@@ -249,6 +251,16 @@ body {
     margin: auto;
 	transform: translateY(5px); /* Move it left and up */
     font-size: 10px;
+}
+
+	/* Chat divider colour */
+.divider__5126c,.divider__908e2 {
+  border-color: #3e3f45 !important; /* Change this to any color you want */
+}
+
+.mentioned__5126c::before {
+  background-color: #ff4d4f !important;
+
 }
 
 
@@ -706,4 +718,20 @@ div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Server Channel scroll bar colour */
+.scroller__629e4::-webkit-scrollbar-thumb {
+  background-color: #28282d; /* darker red on hover */
+}
+
+.scroller__629e4::-webkit-scrollbar-thumb:hover {
+  background-color: #232428; /* darker red on hover */
+}
+
+.scrollerBase__99f8c::-webkit-scrollbar-thumb {
+	background-color: #28282d;
+}
+.scrollerBase__99f8c::-webkit-scrollbar-thumb:hover {
+	background-color: #232428;
 }
