@@ -15,7 +15,7 @@
 }
 
 /* Line separator for non-replies */
-.hasReply_c19a55.mentioned__5126c:not(:has([class*="ention"])):before,
+.hasReply_c19a55.mentioned__5126c:not(.hasReply_c19a55):not(:has([class*="ention"])):before,
 .mentioned__5126c .mention:before,
 .mentioned__5126c .roleMention__75297:before {
   content: "";
@@ -23,8 +23,9 @@
   top: 50%;
   left: 0;
   transform: translate(4px, -50%);
-  height: 80%; /* change this value as needed */
+  height: 90%; /* change this value as needed */
   width: 2px;
+  border-radius: 10px;
   background-color: currentColor !important; /* Uses the color of the mention text */
   filter: saturate(var(--saturation-factor, 1));
   pointer-events: none;
@@ -61,10 +62,8 @@
 }
 
 /* Remove default Discord styling */
-.mentioned__5126c:before,
+.mentioned__5126c:not(.hasReply_c19a55):before,
 .mentioned__5126c:after,
-.repliedMessage_c19a55 [class*="ention"]:before,
-.repliedMessage_c19a55 [class*="ention"]:after,
 .mention ~ [class*="ention"]:before,
 .mention ~ [class*="ention"]:after,
 .roleMention__75297 ~ [class*="ention"]:before,
