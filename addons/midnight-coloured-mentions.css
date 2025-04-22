@@ -1,1 +1,73 @@
+/* Coloured role mentions */
+.mentioned__5126c {
+  background: none;
+  z-index: 0;
+}
+.message__5126c:hover, .message__5126c.selected__5126c {
+  background-color: var(--bg-overlay-1,var(--background-message-hover)) !important;
+}
+.messageContent_c19a55, .compact_c19a55 .contents_c19a55 {
+  position: unset !important;
+}
+.mention, .roleMention__75297 {
+  position: unset;
+  filter: none;
+}
+.hasReply_c19a55.mentioned__5126c:not(:has([class*="ention"])):before,
+/* Line separator */
+.mentioned__5126c .mention:before,
+.mentioned__5126c .roleMention__75297:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(4px, -50%);
+  height: 70%; /* change this value as needed */
+  width: 2px;
+  background-color: currentColor; /* Uses the color of the mention text */
+  filter: saturate(var(--saturation-factor, 1));
+  pointer-events: none;
+}
 
+/* Message background — applies to both mentions and role mentions */
+.mentioned__5126c .mention:after,
+.mentioned__5126c .roleMention__75297:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: currentColor; /* Works only if color is defined inline */
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: saturate(var(--saturation-factor,1));
+  border-radius: 10px;
+}
+
+/* Fallback color for user mentions (which don’t have inline color) */
+.mentioned__5126c .mention:not(.roleMention__75297):after {
+  background-color: var(--brand-500); /* Bright blurple, matches user ping */
+  opacity: 0.1;
+}
+
+.roleMention__75297[style]:before {
+  background-color: currentColor;
+}
+/* Message background colour */
+.roleMention__75297[style]:after {
+  background-color: currentColor; /* Uses the color of the mention text */
+  filter: saturate(var(--saturation-factor, 1));
+  opacity: 0.1;
+}
+/* Remove default line */
+.mentioned__5126c:before,
+.mentioned__5126c:after,
+.repliedMessage_c19a55 [class*="ention"]:before,
+.repliedMessage_c19a55 [class*="ention"]:after,
+.mention ~ [class*="ention"]:before,
+.mention ~ [class*="ention"]:after,
+.roleMention__75297 ~ [class*="ention"]:before,
+.roleMention__75297 ~ [class*="ention"]:after,
+.mentioned__5126c:before,
+.mentioned__5126c:after {
+  content: unset;
+}
