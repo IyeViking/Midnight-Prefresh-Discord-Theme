@@ -248,6 +248,14 @@ body {
 	background-color: #ffffff !important;
 }
 
+
+/* Live VC badge */
+.live_a7acae {
+	background-color: #da3e44 !important;
+	color: --var(--text-white) !important; /* Optional: Change text color */
+}
+
+
 /* Round server icons */
 [class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
 [data-list-item-id*="guildsnav_"] > [class*="icon_"] {
@@ -798,4 +806,3 @@ div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
 .scrollerBase__99f8c::-webkit-scrollbar-thumb:hover {
 	background-color: #232428;
 }
-
