@@ -11,7 +11,7 @@ body {
 
     /* sizes */
     --gap: 6px; /* spacing between panels */
-    --divider-thickness: 20x; /* thickness of unread messages divider and highlighted message borders */
+    --divider-thickness: 2x; /* thickness of unread messages divider and highlighted message borders */
     --border-thickness: 0px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
 
     /* animation/transition options */
@@ -805,4 +805,104 @@ div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
 }
 .scrollerBase__99f8c::-webkit-scrollbar-thumb:hover {
 	background-color: #232428;
+}
+
+
+
+/* Coloured role mentions — excluding replies */
+.mentioned__5126c:not(.hasReply_c19a55) {
+  background: none;
+  z-index: 0;
+}
+.message__5126c:hover, .message__5126c.selected__5126c {
+  background-color: var(--bg-overlay-1, var(--background-message-hover)) !important;
+}
+.messageContent_c19a55, .compact_c19a55 .contents_c19a55 {
+  position: unset !important;
+}
+.mention, .roleMention__75297 {
+  position: unset;
+  filter: none;
+}
+
+/* Line separator for non-replies */
+.hasReply_c19a55.mentioned__5126c:not(.hasReply_c19a55):not(:has([class*="ention"])):before,
+.mentioned__5126c .mention:before,
+.mentioned__5126c .roleMention__75297:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(4px, -50%);
+  height: 90%; /* change this value as needed */
+  width: 2px;
+  border-radius: 10px;
+  background-color: currentColor !important; /* Uses the color of the mention text */
+  filter: saturate(var(--saturation-factor, 1));
+  pointer-events: none;
+}
+
+/* Message background for mentions and role mentions — excluding replies */
+.mentioned__5126c:not(.hasReply_c19a55) .mention:after,
+.mentioned__5126c:not(.hasReply_c19a55) .roleMention__75297:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: currentColor !important;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: saturate(var(--saturation-factor, 1));
+  border-radius: 10px;
+}
+
+/* Fallback color for user mentions — excluding replies */
+.mentioned__5126c:not(.hasReply_c19a55) .mention:not(.roleMention__75297):after {
+  background-color: var(--brand-500) !important;
+  opacity: 0.1;
+}
+
+/* Line and background color for inline-colored role mentions */
+.roleMention__75297[style]:before {
+  background-color: currentColor;
+}
+.roleMention__75297[style]:after {
+  background-color: currentColor !important;
+  filter: saturate(var(--saturation-factor, 1));
+  opacity: 0.1;
+}
+
+/* Remove default Discord styling */
+.mentioned__5126c:not(.hasReply_c19a55):before,
+.mentioned__5126c:after,
+.mention ~ [class*="ention"]:before,
+.mention ~ [class*="ention"]:after,
+.roleMention__75297 ~ [class*="ention"]:before,
+.roleMention__75297 ~ [class*="ention"]:after {
+  content: unset;
+}
+
+div.button_f7ecac.dangerous_f7ecac {
+	color: #c23234 !important;
+}
+
+.statusContainer_f910d0 {
+	background-color: #d43c42 !important;
+}
+
+span[class*="timestampInline_"] time::before {
+  content: attr(aria-label);
+  font-size: 12px;
+}
+
+span[class*="timestampInline_"] {
+  font-size: 0px !important;
+}
+
+/* REMOVE QUICK REACT BAR */
+.button_f7ecac.hoverBarButton_f84418:nth-of-type(1),
+.button_f7ecac.hoverBarButton_f84418:nth-of-type(2),
+.button_f7ecac.hoverBarButton_f84418:nth-of-type(3),
+.separator_f84418 {
+   display: none;
 }
