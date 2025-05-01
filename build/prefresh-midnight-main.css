@@ -909,3 +909,13 @@ span[class*="timestampInline_"] {
 .separator_f84418 {
    display: none;
 }
+
+.toolbar__9293f {
+  position: relative;
+}
+
+.toolbar__9293f .iconWrapper__9293f:first-of-type {
+  position: absolute;
+  top: 55px;   /* adjust as needed */
+  right: 10px; /* adjust as needed */
+}
