@@ -2,6 +2,7 @@
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 
+
  /*Custom code edit here */
 body {
     /* font options */
@@ -581,6 +582,12 @@ body {
 }
 
 
+/* Round Spotify Album image */
+#vc-spotify-album-image {
+  border-radius: 20%;
+}
+
+
 .vc-spotify-button {
   color: #aeaeb4; /* Change to your desired color */
 }
@@ -918,4 +925,9 @@ span[class*="timestampInline_"] {
   position: absolute;
   top: 55px;   /* adjust as needed */
   right: 10px; /* adjust as needed */
+}
+
+/* Stage channel icon */
+[class^=icon__] path[d^="M19.61 18.25a1.08"] {
+    color: #75a5e5 !important;
 }
