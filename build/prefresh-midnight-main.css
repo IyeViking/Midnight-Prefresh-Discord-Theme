@@ -156,7 +156,7 @@ body {
 	--text-white: #FFFFFFC9;
 	
 	/* Scrollable Codeblocks */
-	--codeblock-height: 200px;
+	--codeblock-height: 400px;
 }
 
 /* Scrollable Codeblocks */
@@ -930,4 +930,9 @@ span[class*="timestampInline_"] {
 /* Stage channel icon */
 [class^=icon__] path[d^="M19.61 18.25a1.08"] {
     color: #75a5e5 !important;
+}
+
+#vc-imgzoom-magnify-modal {
+  position: relative; /* Establish relative positioning context */
+  	transform: scale(0.8)
 }
