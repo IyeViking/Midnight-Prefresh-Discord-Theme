@@ -64,7 +64,6 @@ body {
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
 }
 
-
 /* color options */
 :root {
 	    /* Set to 1 if you want them to float  *\
@@ -104,8 +103,8 @@ body {
     --accent-new: #d43c42; /* stuff that's normally red like mute/deafen buttons */
     --mention: #35384a; /* background of messages that mention you */
     --mention-hover: #303346; /* background of messages that mention you when hovered */
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
+    --reply: #373c47; /* background of messages that reply to you */
+    --reply-hover: #333742; /* background of messages that reply to you when hovered */
 
     /* status indicator colors */
     --online: #23a55a; /* change to #43a25a for default */
@@ -612,21 +611,12 @@ body {
 }
 
 
-/* Optionally, you can also change the background color of the bar container */
-.bar_a562c8 {
-  background-color: #4d4d4d !important; /* Set the background color of the progress bar container (light grey in this case) */
+/* Spotify Controls Progress Bar */
+#vc-spotify-progress-bar > [class^="slider_"] > [class^="bar_"] > [class^="barFill_"] {
+  background-color: #1db954 !important; /* Set the background color of the progress bar container (light grey in this case) */
 }
 
-/* Normal state of the progress bar fill */
-.bar_a562c8 .barFill_a562c8 {
-  background-color: #1db954 !important; /* Red color for the progress fill */
-  transition: background-color 0.3s ease; /* Smooth transition for color change */
-}
 
-/* Hover state of the progress bar fill */
-.bar_a562c8:hover .barFill_a562c8 {
-  background-color: #e74c3c; /* Green color when hovered */
-}
 
 .panels_c48ade {
 	background-color: #232428 !important;
@@ -921,11 +911,7 @@ span[class*="timestampInline_"] {
   position: relative;
 }
 
-.toolbar__9293f .iconWrapper__9293f:first-of-type {
-  position: absolute;
-  top: 55px;   /* adjust as needed */
-  right: 10px; /* adjust as needed */
-}
+
 
 /* Stage channel icon */
 [class^=icon__] path[d^="M19.61 18.25a1.08"] {
