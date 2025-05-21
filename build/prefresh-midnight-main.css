@@ -2,7 +2,6 @@
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 
-
  /*Custom code edit here */
 body {
     /* font options */
@@ -120,7 +119,7 @@ body {
     --button-border: rgba(0, 0, 0, 0); /* neutral border color of buttons */
 
     /* base colors */
-    --red-1: oklch(76% 0.12 0);
+    --red-1: #dd3336;
     --red-2: oklch(70% 0.12 0);
     --red-3: oklch(64% 0.12 0);
     --red-4: oklch(58% 0.12 0);
@@ -807,79 +806,6 @@ div.sidebarRegionScroller__23e6b.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
 
 
 
-/* Coloured role mentions — excluding replies */
-.mentioned__5126c:not(.hasReply_c19a55) {
-  background: none;
-  z-index: 0;
-}
-.message__5126c:hover, .message__5126c.selected__5126c {
-  background-color: var(--bg-overlay-1, var(--background-message-hover)) !important;
-}
-.messageContent_c19a55, .compact_c19a55 .contents_c19a55 {
-  position: unset !important;
-}
-.mention, .roleMention__75297 {
-  position: unset;
-  filter: none;
-}
-
-/* Line separator for non-replies */
-.hasReply_c19a55.mentioned__5126c:not(.hasReply_c19a55):not(:has([class*="ention"])):before,
-.mentioned__5126c .mention:before,
-.mentioned__5126c .roleMention__75297:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(4px, -50%);
-  height: 90%; /* change this value as needed */
-  width: 2px;
-  border-radius: 10px;
-  background-color: currentColor !important; /* Uses the color of the mention text */
-  filter: saturate(var(--saturation-factor, 1));
-  pointer-events: none;
-}
-
-/* Message background for mentions and role mentions — excluding replies */
-.mentioned__5126c:not(.hasReply_c19a55) .mention:after,
-.mentioned__5126c:not(.hasReply_c19a55) .roleMention__75297:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: currentColor !important;
-  opacity: 0.1;
-  z-index: -1;
-  pointer-events: none;
-  filter: saturate(var(--saturation-factor, 1));
-  border-radius: 10px;
-}
-
-/* Fallback color for user mentions — excluding replies */
-.mentioned__5126c:not(.hasReply_c19a55) .mention:not(.roleMention__75297):after {
-  background-color: var(--brand-500) !important;
-  opacity: 0.1;
-}
-
-/* Line and background color for inline-colored role mentions */
-.roleMention__75297[style]:before {
-  background-color: currentColor;
-}
-.roleMention__75297[style]:after {
-  background-color: currentColor !important;
-  filter: saturate(var(--saturation-factor, 1));
-  opacity: 0.1;
-}
-
-/* Remove default Discord styling */
-.mentioned__5126c:not(.hasReply_c19a55):before,
-.mentioned__5126c:after,
-.mention ~ [class*="ention"]:before,
-.mention ~ [class*="ention"]:after,
-.roleMention__75297 ~ [class*="ention"]:before,
-.roleMention__75297 ~ [class*="ention"]:after {
-  content: unset;
-}
-
 div.button_f7ecac.dangerous_f7ecac {
 	color: #c23234 !important;
 }
@@ -922,3 +848,4 @@ span[class*="timestampInline_"] {
   position: relative; /* Establish relative positioning context */
   	transform: scale(0.8)
 }
+
