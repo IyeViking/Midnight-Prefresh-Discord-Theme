@@ -386,13 +386,6 @@ body {
     fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
 }
 
-/*
-
-
-/* Change background and text/icon color on hover */
-#message-report:hover {
-    background-color: #00ff00 !important; /* Replace 'darkred' with your desired hover background color */
-}
 
 /* Change text colour for the 'Report Message' option */
 #message-report .label_c1e9c4 {
@@ -404,10 +397,6 @@ body {
     fill: #c23234 !important; /* Replace 'red' with your desired color */
 }
 
-/* Change hover colour for the 'Report Message' option */
-#message-report:hover .label_c1e9c4 {
-    fill: #00ff00 !important; /* Replace 'red' with your desired color */
-}
 
 #message-report:hover .label_c1e9c4 {
     color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
@@ -423,19 +412,10 @@ body {
 
 
 /* Block User Option */
-/* Change background and text/icon color on hover */
-#user-context-block:hover {
-    background-color: #00ff00 !important; /* Replace 'darkred' with your desired hover background color */
-}
 
 /* Change text colour for the 'Block' option */
 #user-context-block .label_c1e9c4 {
     color: #dd3336 !important; /* Replace 'red' with your desired color */
-}
-
-/* Change hover colour for the 'Block' option */
-#user-context-block:hover .label_c1e9c4 {
-    fill: #00ff00 !important; /* Replace 'red' with your desired color */
 }
 
 #user-context-block:hover .label_c1e9c4 {
@@ -450,10 +430,6 @@ body {
 /* Change colour for the 'Remove Message History' option */
 #message-ml-remove-history .label_c1e9c4 {
   color: #dd3336 !important;
-}
-/* Change hover colour for the 'Remove Message History' option */
-#message-ml-remove-history:hover .label_c1e9c4 {
-    fill: #00ff00 !important; /* Replace 'red' with your desired color */
 }
 
 #message-ml-remove-history:hover .label_c1e9c4 {
@@ -474,10 +450,7 @@ body {
 #guild-context-leave-guild .label_c1e9c4 {
   color: #dd3336 !important;
 }
-/* Change hover colour for the 'Leave Server' option */
-#guild-context-leave-guild:hover .label_c1e9c4 {
-    fill: #00ff00 !important; /* Replace 'red' with your desired color */
-}
+
 
 #guild-context-leave-guild:hover .label_c1e9c4 {
     color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
