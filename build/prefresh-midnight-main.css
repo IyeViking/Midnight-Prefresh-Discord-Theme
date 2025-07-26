@@ -2,6 +2,7 @@
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 
+
  /*Custom code edit here */
 body {
     /* font options */
@@ -97,8 +98,8 @@ body {
     --accent-1: #75a5e5; /* links and other accent text */
     --accent-2: #6e85d3; /* small accent elements */
     --accent-3: #555fc9; /* accent buttons */
-    --accent-4: #4654c0; /* accent buttons when hovered */
-    --accent-5: #3a48a3; /* accent buttons when clicked */
+    --accent-4: #6374c8; /* accent buttons when hovered */
+    --accent-5: #586abe; /* accent buttons when clicked */
     --accent-new: #d43c42; /* stuff that's normally red like mute/deafen buttons */
     --mention: #35384a; /* background of messages that mention you */
     --mention-hover: #303346; /* background of messages that mention you when hovered */
@@ -326,7 +327,7 @@ body {
 }
 
 .visual-refresh .listItem__650eb {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-bottom: 5px;
 }
 
@@ -822,3 +823,17 @@ span[class*="timestampInline_"] {
   	transform: scale(0.8)
 }
 
+.button__6af3a.sm__6af3a.primary__6af3a.hasText__6af3a {
+	color: var(--text-white) !important; /* text color */
+	background-color: #6e85d3 !important; /* bg color */
+}
+
+.button__6af3a.sm__6af3a.primary__6af3a.hasText__6af3a:hover {
+	color: var(--text-white) !important; /* text color */
+	background-color: #6374c8 !important; /* bg color */
+}
+
+.button__6af3a.sm__6af3a.primary__6af3a.hasText__6af3a:active {
+	color: var(--text-white) !important; /* text color */
+	background-color: #586abe !important; /* bg color */
+}
