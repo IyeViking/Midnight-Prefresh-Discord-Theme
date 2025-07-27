@@ -497,7 +497,17 @@ body {
 /* Change colour of the close button when hovered */
 .winButtonClose_c38106:hover {
     background-color: #da3e44 !important; /* Change to your desired hover background color */
+	border-radius: 10%; /* Adjust to match the theme */
 }
+
+.winButton_c38106/winButtonMinMax_c38106 {
+		border-radius: 10%;
+}
+
+.winButton_c38106.winButtonMinMax_c38106 {
+	border-radius: 10%;
+}
+
 
 /* Default button colour */
 .button__201d5.lookFilled__201d5.colorRed__201d5 {
