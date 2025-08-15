@@ -855,7 +855,17 @@ span[class*="timestampInline_"] {
 
 /* Profile Modal V1 Back */
 /* blade0 - the.rabbit.disabler in Vencord server */
+
 .user-profile-modal-v2 {
+  --pmv1b-max-width: 800px; /* Adjust value as needed */
+  --pmv1b-banner-height: 50%; /* Adjust value as needed */
+
+}
+
+.user-profile-modal-v2 {
+    max-width: var(--pmv1b-max-width) !important;
+    min-width: 0px !important;
+
     .inner_c0bea0 {
         padding: 0px !important;
         gap: 0px !important;
@@ -864,12 +874,22 @@ span[class*="timestampInline_"] {
     }
 
     .profile__9c3be {
-        /* height: 40%; */
         width: 100%;
         height: 100%;
-        /* display: flex; */
-        /* flex-direction: row!important; */
         position: absolute;
+        border-radius: var(--radius-md);
+    }
+
+    &.custom-theme-background {
+        .inner_c0bea0 {
+            padding: 4px !important;
+            background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color)) !important;
+        }
+
+        .profile__9c3be {
+            width: calc(100% - 8px);
+            height: calc(100% - 8px);
+        }
     }
 
     .selected_b3f026 {
@@ -880,10 +900,7 @@ span[class*="timestampInline_"] {
         }
     }
 
-
-
     .inner_c0bea0:has(.tabBarItem__37bfc:focus, .top_b3f026:focus, .tabBarPanel__37bfc:focus-within, .tabBarPanel__37bfc:focus) {
-
         .profile__9c3be {
 
             .markup__75297,
@@ -915,15 +932,19 @@ span[class*="timestampInline_"] {
     }
 
     .tabBarPanel__37bfc {
-
         opacity: 0;
         z-index: 999;
         pointer-events: none !important;
+        padding: 0px 26px;
     }
 
     .container__37bfc {
         margin-top: 270px;
-        padding: 26px;
+        padding: 18px 4px 26px;
+
+        .top_b3f026 {
+            padding-left: 26px;
+        }
     }
 
     .banner__68edb {
@@ -932,16 +953,22 @@ span[class*="timestampInline_"] {
     }
 
     .profileHeader__9c3be {
-        height: 100px;
-        overflow: hidden;
+        height: 320px !important;
 
         .mask__68edb {
-            >mask>circle {
-                transform: scale(0.423);
-            }
+            min-height: 0px !important;
 
             >foreignObject {
-                height: 80px;
+                mask: none;
+
+                .banner__68edb {
+                    min-height: var(--pmv1b-banner-height) !important;
+                    height: var(--pmv1b-banner-height) !important;
+
+                    &::before {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -949,36 +976,87 @@ span[class*="timestampInline_"] {
 
     .profileButtons__9c3be {
         position: fixed;
-        right: 18px;
+        right: 26px;
         top: 230px !important;
     }
 
     .container__63ed3 {
         position: fixed;
         top: 220px !important;
+        max-width: calc(var(--pmv1b-max-width) - 200px - 26px - 26px);
     }
 
     .profileBody__9c3be {
-        margin-top: 126px;
+        margin-top: -2px;
+        padding-top: var(--space-xl);
     }
 
     .top_b3f026::before {
-        content: "About";
+        content: "User Info";
         color: var(--text-primary);
         border-bottom: 2px solid var(--text-primary) !important;
         font-size: 14px;
         font-weight: 600;
-        line-height: 14px;
-        margin-bottom: -1px;
-        padding-bottom: 16px;
-        position: relative;
+        padding-bottom: 13px;
         --tab-item-color: var(--text-primary);
         margin: 0px var(--space-xl) 0px 8px;
     }
 
     .empty_e766f2 {
         padding: 0px !important;
+        justify-content: center;
+    }
+
+    .tabBarItem__37bfc:hover {
+        color: var(--text-primary) !important;
+        cursor: pointer;
+
+        &::after {
+            display: block;
+        }
+    }
+
+    .profileAppConnections__9c3be {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .connection__9bfb9 {
+        border: 1px solid var(--border-subtle) !important;
+        border-radius: var(--radius-sm);
+        padding: var(--space-sm);
+
+        .accountName__9bfb9,
+        .platformUrlAnchor__9bfb9,
+        .connectionInfo__9bfb9 {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    .connectionInfo__9bfb9 {
+        justify-content: start;
+        padding-top: 3px;
+    }
+
+    .connection__9bfb9:has(.metadata__9bfb9>.connectedAccountVanityMetadata_fffe42) {
+        order: -1;
+
+        .connectionInfo__9bfb9 {
+            justify-content: center;
+            padding-top: 0px;
+        }
+    }
+
+    .wrapper__44b0c::before {
+        content: "";
+        position: absolute;
+        left: -7.5%;
+        top: -7.5%;
+        width: 115%;
+        height: 115%;
+        border-radius: 50%;
+        background: var(--profile-gradient-modal-background-color);
     }
 }
-
-/* Profile Modal V1 Back */	
+/* Profile Modal V1 Back */
