@@ -1,4 +1,4 @@
-/* import theme modules */
+
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 
@@ -121,8 +121,8 @@ body {
 
     /* base colors */
     --red-1: #dd3336;
-    --red-2: oklch(70% 0.12 0);
-    --red-3: oklch(64% 0.12 0);
+    --red-2: #c23234;
+    --red-3: #a02c30;
     --red-4: oklch(58% 0.12 0);
     --red-5: oklch(52% 0.12 0);
 
@@ -189,6 +189,21 @@ body {
 	}
 }
 /* Scrollable Codeblocks */
+
+.chatGradient__36d07.chatGradientBase__36d07 {
+	display: none !important;
+}
+
+.chatTypingGradientNotAtBottom__36d07.chatGradientBase__36d07 {
+	display: none !important;
+}
+
+
+
+.theme-dark.theme-midnight.images-dark.container__9293f.transparent__9293f {
+	background: transparent !important;
+}
+
 
 /* Change background and text colour of the join call buttons, --green-2 is the non hover colour */
 .staticButton_f1ceac.colorable_f1ceac.join_f1ceac:hover {
@@ -368,105 +383,7 @@ body {
 }
 
 
-/* Change text color for the 'Delete Message' option */
-#message-delete .label_c1e9c4 {
-    color: #dd3336 !important; /* Replace 'red' with your desired color */
-}
 
-/* Change icon color for the 'Delete Message' option */
-#message-delete .icon_c1e9c4 path {
-    fill: #c23234 !important; /* Replace 'red' with your desired color */
-}
-
-/* Change background and text/icon color on hover */
-#message-delete:hover {
-    background-color: #a02c30 !important; /* Replace 'darkred' with your desired hover background color */
-}
-
-#message-delete:hover .label_c1e9c4 {
-    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
-}
-
-#message-delete:hover .icon_c1e9c4 path {
-    fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
-}
-
-
-/* Change text colour for the 'Report Message' option */
-#message-report .label_c1e9c4 {
-    color: #dd3336 !important; /* Replace 'red' with your desired color */
-}
-
-/* Change icon colour for the 'Report Message' option */
-#message-report .icon_c1e9c4 path {
-    fill: #c23234 !important; /* Replace 'red' with your desired color */
-}
-
-
-#message-report:hover .label_c1e9c4 {
-    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
-}
-
-#message-report:hover .icon_c1e9c4 path {
-    fill: #FFFFFFC9 !important; /* Replace 'white' with your desired hover icon color */
-}
-
-#message-report.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
-	background-color: #a02c30 !important;
-}
-
-
-/* Block User Option */
-
-/* Change text colour for the 'Block' option */
-#user-context-block .label_c1e9c4 {
-    color: #dd3336 !important; /* Replace 'red' with your desired color */
-}
-
-#user-context-block:hover .label_c1e9c4 {
-    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
-}
-
-#user-context-block.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
-	background-color: #a02c30 !important;
-}
-
-
-/* Change colour for the 'Remove Message History' option */
-#message-ml-remove-history .label_c1e9c4 {
-  color: #dd3336 !important;
-}
-
-#message-ml-remove-history:hover .label_c1e9c4 {
-    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
-}
-
-#message-ml-remove-history.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
-	background-color: #a02c30 !important;
-}
-
-
-/* Leave Server */
-#guild-context-leave-guild.item_c1e9c4.labelContainer_c1e9c4.colorDanger_c1e9c4.colorDefault_c1e9c4:hover {
-	background-color: #a02c30 !important;
-}
-
-/* Change colour for the 'Leave Server' option */
-#guild-context-leave-guild .label_c1e9c4 {
-  color: #dd3336 !important;
-}
-
-
-#guild-context-leave-guild:hover .label_c1e9c4 {
-    color: #FFFFFFC9 !important; /* Replace 'white' with your desired hover text color */
-}
-
-
-/* idk what this does
-.item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4:not(#message-delete):hover {
-    background-color: #323752 !important;
-}
-*/
 
 
 /* */
@@ -513,21 +430,6 @@ body {
 }
 
 
-/* Default button colour */
-.button__201d5.lookFilled__201d5.colorRed__201d5 {
-    background-color: #ba2f31 !important; /* Change to your desired color */
-    color: v !important; /* Text color */
-}
-
-/* Hover effect */
-.button__201d5.lookFilled__201d5.colorRed__201d5:hover {
-    background-color: #a12829 !important; /* Change to your desired hover color */
-    color: #FFFFFFC9 !important; /* Text color on hover */
-}
-
-.item_c1e9c4.labelContainer_c1e9c4.colorDefault_c1e9c4:not(#message-delete):hover {
-    background-color: #30313d !important;
-}
 
 
 .welcomeCTAButtonOuter_f5d1e2 {
@@ -858,7 +760,7 @@ span[class*="timestampInline_"] {
 
 .user-profile-modal-v2 {
   --pmv1b-max-width: 800px; /* Adjust value as needed */
-  --pmv1b-banner-height: 50%; /* Adjust value as needed */
+  --pmv1b-banner-height: 65%; /* Adjust value as needed */
 
 }
 
@@ -1059,4 +961,4 @@ span[class*="timestampInline_"] {
         background: var(--profile-gradient-modal-background-color);
     }
 }
-/* Profile Modal V1 Back */
+/* Profile Modal V1 Back */	
