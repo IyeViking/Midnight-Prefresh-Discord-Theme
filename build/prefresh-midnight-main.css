@@ -1,4 +1,5 @@
 
+/* import theme modules */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 
@@ -704,16 +705,6 @@ div.button_f7ecac.dangerous_f7ecac {
 	background-color: #d43c42 !important;
 }
 
-
-/* Old Timestamp Details */
-span[class*="timestampInline_"] time::before {
-  content: attr(aria-label);
-  font-size: 12px;
-}
-
-span[class*="timestampInline_"] {
-  font-size: 0px !important;
-}
 
 /* REMOVE QUICK REACT BAR */
 .button_f7ecac.hoverBarButton_f84418:nth-of-type(1),
