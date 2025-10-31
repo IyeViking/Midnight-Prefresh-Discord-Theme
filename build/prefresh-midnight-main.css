@@ -227,7 +227,7 @@ body {
 	background-color: #2b2d31 !important;
 }
 
-.searchBar__35e86 {
+.searchBar_e6b769 {
 	background-color: #2b2d31 !important;
 }
 
@@ -357,12 +357,12 @@ body {
 }
 
 /* Increase the folder size */
-.visual-refresh .expandedFolderBackground__48112 {
+.visual-refresh .folderGroupBackground__48112 {
     width: 90%;
     left: 3.1px;
     
 }
-.wrapper__48112 {
+.folderGroup__48112 {
     --folder-height-fit: fit-content;
     height: calc(var(--folder-height-fit) + 30px)!important;
 }
@@ -411,7 +411,7 @@ body {
   left: 13px;
 }
 
-.sidebarResizeHandle_c48ade {
+.sidebarResizeHandle__5e434 {
     opacity: 0 !important;
 }
 
@@ -508,11 +508,11 @@ body {
 
 
 
-.panels_c48ade {
+.panels__5e434 {
 	background-color: #232428 !important;
 }
 
-.separator_b3f026 {
+.separator_aa8da2 {
 	background-color: #75a5e5 !important;
 }
 
@@ -572,10 +572,10 @@ background: #3c4a7f !important;
 }
 
 /* Online / All / Implicit */
-.item__133bf.item_b3f026.selected_b3f026.themed_b3f026 {
+.item__133bf.item_aa8da2.selected_aa8da2.themed_aa8da2 {
 	background-color: #43434a !important;
 }
-.item__133bf:hover.item_b3f026.selected_b3f026.themed_b3f026 {
+.item__133bf:hover.item_aa8da2.selected_aa8da2.themed_aa8da2 {
 	background-color: #4f4f59 !important;
 	    transition: none !important;
 }
@@ -632,11 +632,11 @@ background: #3c4a7f !important;
 	background-color: #111214 !important;
 }
 
-.messagesPopout__45690.thin_d125d2.scrollerBase_d125d2 {
+.messagesPopout_e8b59c.thin_d125d2.scrollerBase_d125d2 {
 	background-color: #1e1f22 !important;
 }
 
-.header__45690 {
+.header_e8b59c {
 		background-color: #1e1f22 !important;
 }
 
@@ -730,17 +730,17 @@ div.button_f7ecac.dangerous_f7ecac {
   	transform: scale(0.8)
 }
 
-.button__6af3a.sm__6af3a.primary__6af3a.hasText__6af3a {
+.button_a22cb0.sm_a22cb0.primary_a22cb0.hasText_a22cb0 {
 	color: var(--text-white) !important; /* text color */
 	background-color: #6e85d3 !important; /* bg color */
 }
 
-.button__6af3a.sm__6af3a.primary__6af3a.hasText__6af3a:hover {
+.button_a22cb0.sm_a22cb0.primary_a22cb0.hasText_a22cb0:hover {
 	color: var(--text-white) !important; /* text color */
 	background-color: #6374c8 !important; /* bg color */
 }
 
-.button__6af3a.sm__6af3a.primary__6af3a.hasText__6af3a:active {
+.button_a22cb0.sm_a22cb0.primary_a22cb0.hasText_a22cb0:active {
 	color: var(--text-white) !important; /* text color */
 	background-color: #586abe !important; /* bg color */
 }
@@ -751,7 +751,7 @@ div.button_f7ecac.dangerous_f7ecac {
 
 .user-profile-modal-v2 {
   --pmv1b-max-width: 800px; /* Adjust value as needed */
-  --pmv1b-banner-height: 65%; /* Adjust value as needed */
+  --pmv1b-banner-height: 50%; /* Adjust value as needed */
 
 }
 
@@ -785,7 +785,7 @@ div.button_f7ecac.dangerous_f7ecac {
         }
     }
 
-    .selected_b3f026 {
+    .selected_aa8da2 {
         color: var(--text-secondary) !important;
 
         &::after {
@@ -793,7 +793,7 @@ div.button_f7ecac.dangerous_f7ecac {
         }
     }
 
-    .inner_c0bea0:has(.tabBarItem__37bfc:focus, .top_b3f026:focus, .tabBarPanel__37bfc:focus-within, .tabBarPanel__37bfc:focus) {
+    .inner_c0bea0:has(.tabBarItem__37bfc:focus, .top_aa8da2:focus, .tabBarPanel__37bfc:focus-within, .tabBarPanel__37bfc:focus) {
         .profile__9c3be {
 
             .markup__75297,
@@ -810,12 +810,12 @@ div.button_f7ecac.dangerous_f7ecac {
             pointer-events: all !important;
         }
 
-        .top_b3f026::before {
+        .top_aa8da2::before {
             color: var(--text-secondary);
             border-bottom: none !important;
         }
 
-        .selected_b3f026 {
+        .selected_aa8da2 {
             color: var(--selected-tab-item-color) !important;
 
             &::after {
@@ -835,7 +835,7 @@ div.button_f7ecac.dangerous_f7ecac {
         margin-top: 270px;
         padding: 18px 4px 26px;
 
-        .top_b3f026 {
+        .top_aa8da2 {
             padding-left: 26px;
         }
     }
@@ -884,7 +884,7 @@ div.button_f7ecac.dangerous_f7ecac {
         padding-top: var(--space-xl);
     }
 
-    .top_b3f026::before {
+    .top_aa8da2::before {
         content: "User Info";
         color: var(--text-primary);
         border-bottom: 2px solid var(--text-primary) !important;
