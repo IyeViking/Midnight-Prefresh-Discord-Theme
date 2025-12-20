@@ -1,3 +1,4 @@
+
 /* import theme modules */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 /* @import url('https://raw.githubusercontent.com/IyeViking/Midnight-Prefresh-Discord-Theme/refs/heads/main/build/midnight_Classes_Update_31_10_2025.css');  */
@@ -271,12 +272,16 @@ body {
 	transform: scale(1.1) translateZ(0);
 }
 
-/* Server Icon Size */
+/* Round Folder */
 .visual-refresh .cc5dd25190031396-wrapper {
 	border-radius: 50% !important;
 	overflow: hidden !important;
-	transform: scale(1.25) translateZ(0);
 }
+
+.cc5dd25190031396-lowerBadge {
+    transform: scale(1.1) translateX(-2px) translateY(-1px);
+}
+
 
 /* Spacing */
 .visual-refresh ._650eb104245d257b-listItem {
@@ -491,45 +496,7 @@ background: #3c4a7f !important;
 }background-color: #2b2d31 !important;
 /* Online / All / Implicit */
 
-/* Coloured Role Icons in User Profile*/
-.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill {
-    position: relative;
-    background: none;
-    border: none;
-    padding-left: 28px;
-}
 
-.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill > span {
-    z-index: 1;
-}
-
-.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill .dfa8b6b94cddb191-roleRemoveButton {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: 0 !important;
-}
-
-.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill ._4f569b8941af22d1-roleCircle {
-    margin: 6px 8px;
-}
-
-.dfa8b6b94cddb191-role.dfa8b6b94cddb191-pill ._4f569b8941af22d1-roleCircle::before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: inherit;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    border-radius: var(--radius-xs);
-    filter: brightness(1.1);
-    opacity: 0.25;
-}
-/* Coloured Role Icons in User Profile*/
 
 /* Server Channel scroll bar colour */
 ._629e4c86564a4ee7-scroller::-webkit-scrollbar-thumb {
