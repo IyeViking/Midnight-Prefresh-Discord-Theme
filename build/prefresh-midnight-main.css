@@ -84,7 +84,7 @@ body {
     --text-2: #eaeaea; /* headings and important text */
     --text-3: #dbdee1; /* normal text */
     --text-4: #aeaeb4; /* icon buttons and channels */
-    --text-5: #a8a8af; /* muted channels/chats and timestamps */
+    --text-5: #60606c; /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     --bg-1: #43434a; /* dark buttons when clicked */
@@ -760,5 +760,6 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
     }
 }
 /* Profile Modal V1 Back */	
+
 
 
