@@ -1,20 +1,16 @@
-
 /* import theme modules */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
-/* @import url('https://raw.githubusercontent.com/IyeViking/Midnight-Prefresh-Discord-Theme/refs/heads/main/build/midnight_Classes_Update_31_10_2025.css');  */
 @import url('https://nspc911.github.io/themes/vencord/ChatRelatedAlertsAtTop.theme.css');
 
-
- /*Custom code edit here */
 body {
     /* font options */
-    --font: ''; /* change to '' for default discord font, 'figtree' for midnight font */
+    --font: ''; /* change to '' for default discord font */
     --code-font: ''; /* change to '' for default discord font */
     font-weight: 400; /* normal text font weight. DOES NOT AFFECT BOLD TEXT */
 
     /* sizes */
     --gap: 6px; /* spacing between panels */
-    --divider-thickness: 2x; /* thickness of unread messages divider and highlighted message borders */
+    --divider-thickness: 2px; /* thickness of unread messages divider and highlighted message borders */
     --border-thickness: 0px; /* thickness of borders around main panels. DOES NOT AFFECT OTHER BORDERS */
 
     /* animation/transition options */
@@ -24,7 +20,7 @@ body {
     --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
 
     /* top bar options */
-    --top-bar-height: var(--gap); /* height of the top bar (Prefresh had 18px, discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
     --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
     --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
     --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
@@ -35,15 +31,14 @@ body {
 
     /* dms button options */
     --custom-dms-icon: off; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
-    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-url: url(''); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
-    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+    --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
     --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
     --dms-background-image-url: url(''); /* url of the background image */
     --dms-background-image-size: cover; /* size of the background image (css background-size property) */
     --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
-
 
     /* background image options */
     --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */
@@ -58,9 +53,8 @@ body {
     --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
 
     /* chatbar options */
-    --custom-chatbar: separated; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
-    --chatbar-height: 56px; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
-    --chatbar-padding: 8px; /* padding of the chatbar. only applies in aligned mode. */
+    --custom-chatbar: separated; /* off: default chatbar, separated: chatbar separated from chat */
+    --chatbar-height: 56px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
 
     /* other options */
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
@@ -68,15 +62,7 @@ body {
 
 /* color options */
 :root {
-	    /* Set to 1 if you want them to float  *\
-    |*      Recommended while using        *|
-    \*      Midnight/Rounded Themes        */
-    --craat-popout: 0; /* Default = 0 */
-    /* Change the border radius *\
-    \*      for the alerts      */
-    --craat-border-radius: 16px; /* default: 16px */
-	
-    --colors: on; /* turn off to use discord default colors */
+    --colors: on; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
     --text-0: #FFFFFFC9; /* text on colored elements */
@@ -84,13 +70,13 @@ body {
     --text-2: #eaeaea; /* headings and important text */
     --text-3: #dbdee1; /* normal text */
     --text-4: #aeaeb4; /* icon buttons and channels */
-    --text-5: #60606c; /* muted channels/chats and timestamps */
+    --text-5: #a8a8af; /* muted channels/chats and timestamps */
 
     /* background and dark colors */
     --bg-1: #43434a; /* dark buttons when clicked */
     --bg-2: #1e1f22; /* dark buttons */
     --bg-3: #28282d; /* spacing, secondary elements*/ 
-    --bg-4: #313338	; /* main background color */
+    --bg-4: #313338; /* main background color */
     --hover: #26282b; /* channels and buttons when hovered */
     --active: hsla(220, 15%, 40%, 0.3); /* channels and buttons when clicked or selected */
     --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
@@ -155,370 +141,166 @@ body {
 	/* My colours */
 
 	--text-white: #FFFFFFC9;
-	
-	/* Scrollable Codeblocks */
-	--codeblock-height: 400px;
+
+/* User Panel Redesign */
+
+  --panel-radius: 16px;
+
+  --spotify-image-opacity: 0.5;
+  --spotify-image-hover-opacity: 0.85;
+
+  --order-quests: 0;
+  --order-listening: 1;
+  --order-stream: 2;
+  --order-spotify-player: 3;
+  --order-voice: 4;
+  --order-profile: 5;
+  
+/* User Panel Redesign */
+  
 }
 
-/* Scrollable Codeblocks */
-._752971923a1e6683-codeContainer > code {
-  max-height: var(--codeblock-height);
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    height: 8px;
-    width: 8px;
+/* User Panel Redesign */
+
+.panels__5e434 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  background: var(--bg-3);
+  border: none;
+}
+
+.mask__0d616 {
+  order: var(--order-quests);
+  margin-inline: 0;
+  padding-inline: 0;
+  border-radius: var(--panel-radius);
+}
+.wrapper__0d616,
+.wrapperVisible__0d616 {
+  border-radius: var(--panel-radius);
+}
+
+.listeningAlong_e0cf27,
+.panel__5dec7,
+.container_e131a9,
+.container__37e49 {
+  background-color: var(--bg-4);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--panel-radius);
+}
+
+.listeningAlong_e0cf27 {
+  order: var(--order-listening);
+}
+
+.panel__5dec7 {
+  order: var(--order-stream);
+  padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
+}
+
+.wrapper_e131a9 {
+  order: var(--order-voice);
+
+  &:not(:has(.container_e131a9)) {
+    display: none;
   }
-  &::-webkit-scrollbar-corner {
-    background-color: transparent;
+
+  .container_e131a9 {
+    min-height: 90px;
   }
-    &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
-    /* visibility: hidden; */
+}
+
+.container__37e49 {
+  order: var(--order-profile);
+  min-height: 56px;
+
+  &:has(.plated_37e49) {
+    border: none;
   }
-  &::-webkit-scrollbar-thumb {
-    background-clip: padding-box;
-    background-color: var(--scrollbar-thin-thumb);
-    border: 2px solid transparent;
-    border-radius: 4px;
-    min-height: 40px;
-  }
-  &:hover::-webkit-scrollbar-track, &:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-thin-track);
-    border: 2px solid var(--scrollbar-thin-track);
-    border-color: var(--scrollbar-thin-track);
-	}
 }
-/* Scrollable Codeblocks */
-
-._36d072eab2b2e737-chatGradient._36d072eab2b2e737-chatGradientBase {
-	display: none !important;
-}
-
-._36d072eab2b2e737-chatTypingGradientNotAtBottom._36d072eab2b2e737-chatGradientBase {
-	display: none !important;
-}
-
-
-
-.theme-dark.theme-midnight.images-dark._9293f6b2fc12398a-container._9293f6b2fc12398a-transparent {
-	background: transparent !important;
-}
-
-
-.c8ffbb79449f399c-container {
-    background-color: #2b2d31 !important;
-}
-
-._2637a2609f343032-container {
-	background-color: #2b2d31 !important;
-}
-
-.ef3116c2da186559-itemsContainer {
-	background-color: #1e1f22 !important;
-}
-
-._99e7cad8d4c55236-scroller {
-	background-color: #2b2d31 !important;
-}
-
-.e6b7699ce8339e1c-searchBar {
-	background-color: #2b2d31 !important;
-}
-
-._974928fe84ca9647-searchBar {
-	background-color: #1e1f22 !important;
-}
-
-.f75fb00fb7356cbe-subtitleContainer {
-	background-color: #2b2d31 !important;
-}
-
-.c0bea05627c5dc35-inner {
-	background-color: #232428 !important;
-}
-
-.embedWrapper_b7e1cb {
-    border-left-color: #c43035 !important;
-}
-
-._740174f3d6a2c8fe-scrollableContainer._740174f3d6a2c8fe-themedBackground {
-	background-color: #2b2d31	 !important;
-}
-
-.c1e9c47c23f12ca3-scroller {
-	background-color: #1e1f22 !important;
-}
-
-
-/* Live VC badge */
-.a7acaedd978a9637-live {
-	background-color: #da3e44 !important;
-	color: --var(--text-white) !important;
-}
-
-
-/* Round server icons */
-._6e9f8dce4cc18de3-wrapper {
-	border-radius: 50% !important;
-	overflow: hidden !important;
-}
-
-/* Folder inner icons */
-._48112cbe77dc5022-folderPreviewGuildIcon {
-	border-radius: 50% !important;
-	overflow: hidden !important;
-	transform: scale(1.1) translateZ(0);
-}
-
-/* Round Folder */
-.visual-refresh .cc5dd25190031396-wrapper {
-	border-radius: 50% !important;
-	overflow: hidden !important;
-}
-
-.cc5dd25190031396-lowerBadge {
-    transform: scale(1.1) translateX(-2px) translateY(-1px);
-}
-
-
-/* Round server icons */
-
-
-
-/* No Activity Status*/
-[class*='membersGroup']:has([role=button]),
-[class*='member'] [class*='container']:has([class*='badges']) {
-  display: none;
-}
-/* Hide activity status and member group buttons */
-[class*='membersGroup']:has([role=button]),
-[class*='member'] [class*='container']:has([class*='badges']) {
-  display: none;
-}
-
-
-
-.vc-ranb-button {
-    width: 50px;
-    margin: auto;
-	transform: translateY(5px); /* Move it left and up */
-    font-size: 10px;
-}
-
-._5126c0cd07f243a0-mentioned::before {
-  background-color: #ff4d4f !important;
-}
-
-
-/* Change color of the date/time divider only */
-._5126c0cd07f243a0-divider._5126c0cd07f243a0-hasContent {
-  --divider-color: #3e3f45; /* Replace with your desired color */
-  color: var(--divider-color); /* Affects text (e.g., date) */
-  border-color: var(--divider-color); /* Affects the line */
-}
-
-
-
-
-
-/* ///////////// Server bar ///////////// */
-/* Move the server unread marker to the left */
-.visual-refresh ._581051df43c5ebb6-item {
-    margin-left: calc((var(--custom-guild-list-padding) - 10px) / 2);
-}
-/* Move the server unread marker to the left */
-
-
-/* Move search bar / other icons */
-[class*="_9293f6b2fc12398a-toolbar"] {
-  position: relative;
-  left: 12px;
-}
-
-
-._9293f6b2fc12398a-children::after {
-  display: none;
-}
-
-.recentsIcon_c99c29 {
-  position: relative;
-  left: 13px;
-}
-
-._5e434347c823b592-sidebarResizeHandle {
-    opacity: 0 !important;
-}
-/* Move search bar / other icons */
-
-/* Move search bar / other icons */
-[class*="_9293f6b2fc12398a-toolbar"] {
-  position: relative;
-  left: 12px;
-}
-
-
-._9293f6b2fc12398a-children::after {
-  display: none;
-}
-
-.recentsIcon_c99c29 {
-  position: relative;
-  left: 13px;
-}
-
-._5e434347c823b592-sidebarResizeHandle {
-    opacity: 0 !important;
-}
-/* Move search bar / other icons */
-
-
-
 
 
 /* Vencord Spotify */
+
+#vc-spotify-player {
+  order: var(--order-spotify-player);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, transparent 0%, var(--panel-color) 100%) !important;
+  border: 1px solid transparent;
+  border-radius: var(--panel-radius);
+  margin: 0 -1px;
+
+  .barFill_a562c8 {
+    background-color: var(--vc-spotify-green) !important;
+  }
+
 #vc-spotify-album-image {
   border-radius: 20%;
 }
 
 
-.vc-spotify-button {
-  color: #aeaeb4; /* Change to your desired color */
-}
+  .vc-spotify-button-play,
+  .vc-spotify-repeat-context,
+  .vc-spotify-repeat-track,
+  .vc-spotify-shuffle-on {
+    span {
+      color: #1ed760 !important;
+    }
+    svg {
+      fill: #1ed760 !important;
+    }
+  }
 
 .vc-spotify-button:hover {
-  color: #00ff00; /* Hover color */
+  color: #1ed760; /* Hover color */
 }
 
-/* Color when shuffle is on */
-.vc-spotify-button.vc-spotify-shuffle-on {
-  color: #1dd05d; /* Set color when shuffle is on, e.g., red */
+  .vc-spotify-progress-time {
+    margin-top: 10px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: all 0.4s ease-out;
+    z-index: -1;
+  }
+  &::before {
+    background: var(--vc-spotify-track-image) center/cover no-repeat;
+    opacity: var(--spotify-image-opacity);
+  }
+  &:hover::before {
+    opacity: var(--spotify-image-hover-opacity);
+  }
+  &:hover::after {
+    backdrop-filter: blur(0);
+  }
+
+  > * {
+    filter: drop-shadow(0 0 10px var(--panel-color));
+  }
 }
 
-/* Color when repeat is on */
-.vc-spotify-repeat-track {
-  color: #1dd25e; /* Set color when shuffle is on, e.g., red */
-}
-
-/* Color when repeat is on */
-.vc-spotify-repeat-context {
-  color: #1dd25e; /* Set color when shuffle is on, e.g., red */
-}
-
-
-/* Spotify Controls Progress Bar */
-#vc-spotify-progress-bar > [class^="slider_"] > [class^="bar_"] > [class^="barFill_"] {
-  background-color: #1db954 !important; /* Set the background color of the progress bar container (light grey in this case) */
-}
-
-._5e434347c823b592-panels {
-	background-color: #232428 !important;
-}
-
-.aa8da23faa27393c-separator {
-	background-color: #75a5e5 !important;
-}
-
-.highlight {
-  background: #3c4a7f;
-}
-/* Vencord Spotify */
-
-
-/* Highlight */
-::selection {
-background: #3c4a7f !important;
-}
-/* Highlight */
+/* User Panel Redesign */
 
 /* Spoiler Colour */
-._299eb87491f4b6d1-spoilerContent._299eb87491f4b6d1-spoilerMarkdownContent._299eb87491f4b6d1-hidden {
-	background-color: #1e1f22 !important;
-	    transition: none !important;
+
+span[role="button"][aria-label="Spoiler"] {
+  	background-color: #1e1f22 !important; /* base spoiler colour */
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
 }
 
-._299eb87491f4b6d1-spoilerContent:hover._299eb87491f4b6d1-spoilerMarkdownContent._299eb87491f4b6d1-hidden {
-	background-color: #22242a !important;
-	    transition: none !important;
+span[role="button"][aria-label="Spoiler"]:hover {
+  background-color: #272930 !important; /* hover colour */
 }
 
-.faa96b2163f6a142-container.f369dba7416c67f0-mainCard {
-	background-color: #2b2d31 !important;
-}
-
-.faa96b2163f6a142-container:hover.f369dba7416c67f0-mainCard {
-	background-color: #2b2d31 !important;
-    outline: 4px solid #52555e; /* Red outline on hover */
-}
-
-
-[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
-  position: sticky;
-  bottom: 0px;
-  z-index: 999;
-  background-color: #2b2d31 !important;
-}
-
-.a9e7064fdee8e9b0-scroller.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase {
-	background-color: #2b2d31 !important;
-}
-
-.f3b986a284a18c78-searchHeader {
-	background-color: #2b2d31 !important;
-}
-
-._133bf5eea8e33a34-nowPlayingColumn {
-	background-color: #2b2d31 !important;
-}
-
-._0f481cbbd7530492-jumpToPresentBar._0f481cbbd7530492-bottomBar._0f481cbbd7530492-barBase.barWithAppLauncherButton__0f481 {
-	background-color: #2b2d31 !important;
-}
 /* Spoiler Colour */
 
-/* Online / All / Implicit */
-._133bf5eea8e33a34-item.aa8da23faa27393c-item.aa8da23faa27393c-selected.aa8da23faa27393c-themed {
-	background-color: #43434a !important;
-}
-._133bf5eea8e33a34-item:hover.aa8da23faa27393c-item.aa8da23faa27393c-selected.aa8da23faa27393c-themed {
-	background-color: #4f4f59 !important;
-	    transition: none !important;
-}
-
-._133bf5eea8e33a34-container > ._9293f6b2fc12398a-container {
-	background-color: #2b2d31 !important;
-}background-color: #2b2d31 !important;
-/* Online / All / Implicit */
-
-
-
-/* Server Channel scroll bar colour */
-._629e4c86564a4ee7-scroller::-webkit-scrollbar-thumb {
-  background-color: #28282d; /* darker red on hover */
-}
-
-._629e4c86564a4ee7-scroller::-webkit-scrollbar-thumb:hover {
-  background-color: #232428; /* darker red on hover */
-}
-
-._99f8cc7ad4790ce9-scrollerBase::-webkit-scrollbar-thumb {
-	background-color: #28282d;
-}
-._99f8cc7ad4790ce9-scrollerBase::-webkit-scrollbar-thumb:hover {
-	background-color: #232428;
-}
-
-
-
-div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
-	color: #c23234 !important;
-}
-
-.f910d08f42c82225-statusContainer {
-	background-color: #d43c42 !important;
-}
-/* Server Channel scroll bar colour */
 
 
 /* Stage channel icon */
@@ -526,27 +308,7 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
     color: #75a5e5 !important;
 }
 
-#vc-imgzoom-magnify-modal {
-  position: relative; /* Establish relative positioning context */
-  	transform: scale(0.8)
-}
-
-.a22cb0c66246f5d3-button.a22cb0c66246f5d3-sm.a22cb0c66246f5d3-primary.a22cb0c66246f5d3-hasText {
-	color: var(--text-white) !important; /* text color */
-	background-color: #6e85d3 !important; /* bg color */
-}
-
-.a22cb0c66246f5d3-button.a22cb0c66246f5d3-sm.a22cb0c66246f5d3-primary.a22cb0c66246f5d3-hasText:hover {
-	color: var(--text-white) !important; /* text color */
-	background-color: #6374c8 !important; /* bg color */
-}
-
-.a22cb0c66246f5d3-button.a22cb0c66246f5d3-sm.a22cb0c66246f5d3-primary.a22cb0c66246f5d3-hasText:active {
-	color: var(--text-white) !important; /* text color */
-	background-color: #586abe !important; /* bg color */
-}
-
-
+/* Stage channel icon */
 
 /* Profile Modal V1 Back */
 /* blade0 - the.rabbit.disabler in Vencord server */
@@ -561,14 +323,14 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
     max-width: var(--pmv1b-max-width) !important;
     min-width: 0px !important;
 
-    .c0bea05627c5dc35-inner {
+    .inner_c0bea0 {
         padding: 0px !important;
         gap: 0px !important;
         flex-direction: column !important;
         container-type: size;
     }
 
-    ._9c3bea41fd465666-profile {
+    .profile__9c3be {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -576,48 +338,48 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
     }
 
     &.custom-theme-background {
-        .c0bea05627c5dc35-inner {
+        .inner_c0bea0 {
             padding: 4px !important;
             background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color)) !important;
         }
 
-        ._9c3bea41fd465666-profile {
+        .profile__9c3be {
             width: calc(100% - 8px);
             height: calc(100% - 8px);
         }
     }
 
-    .aa8da23faa27393c-selected {
-        color: var(--text-secondary) !important;
+    .selected_aa8da2 {
+        color: var(--text-4) !important;
 
         &::after {
             display: none;
         }
     }
 
-    .c0bea05627c5dc35-inner:has(._37bfcf3d457db7a9-tabBarItem:focus, .aa8da23faa27393c-top:focus, ._37bfcf3d457db7a9-tabBarPanel:focus-within, ._37bfcf3d457db7a9-tabBarPanel:focus) {
-        ._9c3bea41fd465666-profile {
+    .inner_c0bea0:has(.tabBarItem__37bfc:focus, .top_aa8da2:focus, .tabBarPanel__37bfc:focus-within, .tabBarPanel__37bfc:focus) {
+        .profile__9c3be {
 
-            ._752971923a1e6683-markup,
-            .bf424dc3dc4c8775-section {
+            .markup__75297,
+            .section_bf424d {
                 visibility: hidden !important;
                 pointer-events: none !important;
             }
 
         }
 
-        ._37bfcf3d457db7a9-tabBarPanel {
+        .tabBarPanel__37bfc {
             display: flex !important;
             opacity: 1;
             pointer-events: all !important;
         }
 
-        .aa8da23faa27393c-top::before {
-            color: var(--text-secondary);
+        .top_aa8da2::before {
+            color: var(--text-4);
             border-bottom: none !important;
         }
 
-        .aa8da23faa27393c-selected {
+        .selected_aa8da2 {
             color: var(--selected-tab-item-color) !important;
 
             &::after {
@@ -626,37 +388,37 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
         }
     }
 
-    ._37bfcf3d457db7a9-tabBarPanel {
+    .tabBarPanel__37bfc {
         opacity: 0;
         z-index: 999;
         pointer-events: none !important;
         padding: 0px 26px;
     }
 
-    ._37bfcf3d457db7a9-container {
+    .container__37bfc {
         margin-top: 270px;
         padding: 18px 4px 26px;
 
-        .aa8da23faa27393c-top {
+        .top_aa8da2 {
             padding-left: 26px;
         }
     }
 
-    ._68edb95846a37624-banner {
+    .banner__68edb {
         height: 100% !important;
         border-radius: 0px;
     }
 
-    ._9c3bea41fd465666-profileHeader {
+    .profileHeader__9c3be {
         height: 320px !important;
 
-        ._68edb95846a37624-mask {
+        .mask__68edb {
             min-height: 0px !important;
 
             >foreignObject {
                 mask: none;
 
-                ._68edb95846a37624-banner {
+                .banner__68edb {
                     min-height: var(--pmv1b-banner-height) !important;
                     height: var(--pmv1b-banner-height) !important;
 
@@ -669,27 +431,27 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
     }
 
 
-    ._9c3bea41fd465666-profileButtons {
+    .profileButtons__9c3be {
         position: fixed;
         right: 26px;
         top: 230px !important;
     }
 
-    ._63ed30c16c7151f2-container {
+    .container__63ed3 {
         position: fixed;
         top: 220px !important;
         max-width: calc(var(--pmv1b-max-width) - 200px - 26px - 26px);
     }
 
-    ._9c3bea41fd465666-profileBody {
+    .profileBody__9c3be {
         margin-top: -2px;
         padding-top: var(--space-xl);
     }
 
-    .aa8da23faa27393c-top::before {
+    .top_aa8da2::before {
         content: "User Info";
-        color: var(--text-primary);
-        border-bottom: 2px solid var(--text-primary) !important;
+        color: var(--text-4);
+        border-bottom: 2px solid var(--text-0) !important;
         font-size: 14px;
         font-weight: 600;
         padding-bottom: 13px;
@@ -697,13 +459,13 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
         margin: 0px var(--space-xl) 0px 8px;
     }
 
-    .e766f2028d7616c7-empty {
+    .empty_e766f2 {
         padding: 0px !important;
         justify-content: center;
     }
 
-    ._37bfcf3d457db7a9-tabBarItem:hover {
-        color: var(--text-primary) !important;
+    .tabBarItem__37bfc:hover {
+        color: var(--text-3) !important;
         cursor: pointer;
 
         &::after {
@@ -711,39 +473,39 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
         }
     }
 
-    ._9c3bea41fd465666-profileAppConnections {
+    .profileAppConnections__9c3be {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    ._9bfb9a25604068f0-connection {
+    .connection__9bfb9 {
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-sm);
         padding: var(--space-sm);
 
-        ._9bfb9a25604068f0-accountName,
-        ._9bfb9a25604068f0-platformUrlAnchor,
-        ._9bfb9a25604068f0-connectionInfo {
+        .accountName__9bfb9,
+        .platformUrlAnchor__9bfb9,
+        .connectionInfo__9bfb9 {
             width: 100%;
             justify-content: space-between;
         }
     }
 
-    ._9bfb9a25604068f0-connectionInfo {
+    .connectionInfo__9bfb9 {
         justify-content: start;
         padding-top: 3px;
     }
 
-    ._9bfb9a25604068f0-connection:has(._9bfb9a25604068f0-metadata>.fffe429fef648986-connectedAccountVanityMetadata) {
+    .connection__9bfb9:has(.metadata__9bfb9>.connectedAccountVanityMetadata_fffe42) {
         order: -1;
 
-        ._9bfb9a25604068f0-connectionInfo {
+        .connectionInfo__9bfb9 {
             justify-content: center;
             padding-top: 0px;
         }
     }
 
-    ._44b0c28be7879b7b-wrapper::before {
+    .wrapper__44b0c::before {
         content: "";
         position: absolute;
         left: -7.5%;
@@ -756,6 +518,10 @@ div.f7ecaca5c80dbf3a-button.f7ecaca5c80dbf3a-dangerous {
 }
 /* Profile Modal V1 Back */	
 
-
+/* Hide Back/Forward Buttons */
+[class*='backForwardButtons__63abb'] {
+	display: none !important;
+}
+/* Hide Back/Forward Buttons */
 
 
